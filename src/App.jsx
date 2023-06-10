@@ -1,24 +1,33 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 import { useState } from "react";
 
 import NavigationBar from "./Pages/NavigationBar";
-import Body from "./Pages/Body"
-
-// import CreateAccount from "./Pages/CreateAccount";
+import Body from "./Pages/Body";
+import SubCategories from "./Pages/SubCategories";
+import CreateAccount from "./Pages/CreateAccount";
 //import Login from "./Pages/Login";
 
-function App() {
-	
+const router = createBrowserRouter([
+  { path: "", element: <Body /> },
+  { path: "/products", element: <SubCategories /> },
+  { path: "/createaccount", element: <CreateAccount /> },
+]);
 
-	return (
-		<div className="flex flex-col bg-white text-xl w-full h-screen">
-			<NavigationBar/>
-			<Body/>
-			<div>
-				{/*<Login></Login> */}
-				{/* <CreateAccount></CreateAccount> */}
-			</div>
-		</div>
-	);
+function App() {
+  return (
+    <>
+      <NavigationBar />
+      <div className="flex flex-col bg-white text-xl w-full h-screen">
+        <RouterProvider router={router} />
+        {/* <Body /> */}
+        <div>
+          {/*<Login></Login> */}
+          {/* <CreateAccount></CreateAccount> */}
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default App;
