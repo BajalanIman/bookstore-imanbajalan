@@ -25,13 +25,13 @@ const SubCategories = () => {
       <div className=" ml-6 mt-6 w-full flex justify-center"></div>
       <div></div>
       <div>
-        <div className="sm:grid sm:grid-cols-4 sm:justify-center sm:items-center m-3 p-6">
+        <div className=" container m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {books.map((el) => (
             <div
               key={el.id}
               className="sm:w-96 sm:h-[600px] flex flex-col justify-center items-center border shadow-lg rounded m-6"
             >
-              <img className="w-82 h-64 pt-0" src={el.image} alt={el.name} />
+              <img className="w-82 h-64 pt-3" src={el.image} alt={el.name} />
               <div className="flex flex-col justify-start items-start w-full  gap-5">
                 <div className="flex w-full justify-center items-center">
                   <span className="text-2xl font-bold  pt-1  h-16 flex justify-center items-center font-serif">
@@ -93,7 +93,7 @@ const SubCategories = () => {
                     src="../public/InformationBTN.png"
                     alt="information"
                   />
-                  <button className="text-yellow-50 py-2 px-10 rounded hover:bg-cyan-700 bg-cyan-900 flex justify-center items-center">
+                  <button className="text-yellow-50 py-2 px-10 rounded hover:bg-cyan-700 bg-cyan-900 flex justify-center items-center mb-5">
                     Add to Basket
                   </button>
                   <HeartButton></HeartButton>

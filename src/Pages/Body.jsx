@@ -15,7 +15,7 @@ const Body = () => {
   return (
     <div>
       <div className="sm:w-full h-screen font-sans flex justify-center sm:mt-8">
-        <div className="sm:grid  sm:grid-cols-3  sm:gap-4">
+        <div className="container m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {bookCategories.map((e) => (
             <div
               onClick={() => {
