@@ -7,7 +7,6 @@ import PasswordIcon, {
 } from "../Components/LoginComponents/PasswordIcon";
 
 const Login = () => {
-  const [closeLoginPage, setCloseLoginPage] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const [usernameSubmit, setUsernameSubmit] = useState("");
@@ -57,30 +56,19 @@ const Login = () => {
     }
   }
 
-  const closeLoginHandler = () => {
-    setCloseLoginPage(!closeLoginPage);
-  };
-
   return (
-    <div
-      className={
-        closeLoginPage
-          ? "fixed left-0 top-0 flex h-full w-full items-center justify-center bg-white pb-24"
-          : "hidden"
-      }
-    >
+    <div className="fixed left-0 top-0 flex h-full w-full items-center justify-center bg-white pb-24">
       <div className="flex justify-center items-center w-[300-px] h-[800px]  bg-white p-8">
         <form
           className="bg-white relative flex flex-col justify-center items-center border rounded pb-8 shadow-lg shadow-gray-400"
           onSubmit={sumitLoginForm}
         >
           <div className=" flex w-full justify-end items-end pt-4 pr-6">
-            <span
-              onClick={closeLoginHandler}
-              className="text-black cursor-pointer text-3xl"
-            >
-              &#x2715;
-            </span>
+            <Link to="/">
+              <span className="text-black cursor-pointer text-3xl">
+                &#x2715;
+              </span>
+            </Link>
           </div>
           <div className="w-44 h-44 rounded-full mt-6 flex justify-center items-center border shadow-lg text-gray-400 shadow-gray-400">
             <img
@@ -126,11 +114,12 @@ const Login = () => {
           <div className="flex justify-center items-center h-16 w-96 border border-black bg-cyan-900 text-yellow-50 hover:bg-cyan-600 text-2xl cursor-pointer rounded-full mb-5">
             <button className="w-full h-full">Login</button>
           </div>
-          <p className="flex justify-center text-blue-500 cursor-pointer">
-            Create an account
-          </p>
-          <a href="/createaccount"></a>
-          {/* <Link to="/createaccount">Menu</Link> */}
+          <Link to="/createaccount">
+            <span className="flex justify-center text-blue-500 cursor-pointer">
+              {" "}
+              Create an account
+            </span>
+          </Link>
         </form>
       </div>
     </div>

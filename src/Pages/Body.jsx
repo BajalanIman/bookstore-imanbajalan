@@ -14,8 +14,8 @@ const Body = () => {
 
   return (
     <div>
-      <div className="w-full h-screen font-sans">
-        <div className="grid grid-cols-4 justify-center items-center p-6">
+      <div className="sm:w-full h-screen font-sans flex justify-center sm:mt-8">
+        <div className="sm:grid  sm:grid-cols-3  sm:gap-4">
           {bookCategories.map((e) => (
             <div
               onClick={() => {
@@ -25,15 +25,15 @@ const Body = () => {
                 Navigate("/products", { state: { booklists } });
               }}
               key={e.id}
-              className="w-96 h-96 flex flex-col justify-center items-center border shadow-lg rounded m-6 hover:scale-110 cursor-pointer hover:bg-yellow-50"
+              className="sm:w-96 sm:h-96 flex flex-col justify-center items-center border shadow-lg rounded m-6 hover:scale-110 cursor-pointer hover:bg-yellow-50"
             >
               <p className="text-black pb-7 text-2xl mt-6 font-bold font-serif">
                 {e.category}
               </p>
               <img
-                className="h-72 border mb-8 rounded"
-                src="https://www.rd.com/wp-content/uploads/2021/12/50-science-fiction-books-ft-via-merchant.png"
-                alt=""
+                className="h-72 border mb-8 rounded opacity-90"
+                src={e.image}
+                alt={e.image}
               />
             </div>
           ))}

@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { localize } from "../Translation";
 
-import BackButton from "../Components/SmalComponents/BackButton";
 import HeartButton from "../Components/SmalComponents/HeartButton";
 import ProductInformation from "./ProductInformation";
 
@@ -23,24 +22,16 @@ const SubCategories = () => {
 
   return (
     <div className="mb-4 text-sm font-light text-gray-500 dark:text-gray-400">
-      <div className=" ml-6 mt-6 w-full flex justify-center">
-        <Link to="/">
-          <BackButton></BackButton>
-        </Link>
-      </div>
+      <div className=" ml-6 mt-6 w-full flex justify-center"></div>
       <div></div>
       <div>
-        <div className="grid grid-cols-4 justify-center items-center p-6">
+        <div className="sm:grid sm:grid-cols-4 sm:justify-center sm:items-center m-3 p-6">
           {books.map((el) => (
             <div
               key={el.id}
-              className="w-96 h-[600px] flex flex-col justify-center items-center border shadow-lg rounded m-6"
+              className="sm:w-96 sm:h-[600px] flex flex-col justify-center items-center border shadow-lg rounded m-6"
             >
-              <img
-                className="w-82 h-64 pt-0"
-                src="https://www.rd.com/wp-content/uploads/2021/12/50-science-fiction-books-ft-via-merchant.png"
-                alt="book"
-              />
+              <img className="w-82 h-64 pt-0" src={el.image} alt={el.name} />
               <div className="flex flex-col justify-start items-start w-full  gap-5">
                 <span className="text-2xl font-bold w-full pt-1 pl-14 h-16 flex justify-center items-center font-serif">
                   {el.name}
@@ -59,18 +50,12 @@ const SubCategories = () => {
                     {el.price} €
                   </span>
                   {/* <span>
-													<span className="font-bold"> ISBN: </span>
-													{el.ISBN}
-												</span> */}
+                    <span className="font-bold"> ISBN: </span>
+                    {el.ISBN}
+                  </span>{" "} */}
                 </div>
                 <div className="w-full h-8 px-14 flex gap-6 justify-center">
-                  <img
-                    onClick={infoBtnHandler}
-                    src="../public/InformationBTN.png"
-                    alt="information"
-                  />
-                  <HeartButton></HeartButton>
-                  <div
+                  {/* <div
                     key={el.id}
                     className="flex gap-3 justify-center items-center"
                   >
@@ -98,10 +83,21 @@ const SubCategories = () => {
                       src="../public/minusBTN.png"
                       alt="plus"
                     />
-                  </div>
+                  </div> */}
+                </div>
+                <div className="w-full flex justify-center items-center space-x-8">
+                  <img
+                    onClick={infoBtnHandler}
+                    src="../public/InformationBTN.png"
+                    alt="information"
+                  />
+                  <button className="text-yellow-50 py-2 px-10 rounded hover:bg-cyan-700 bg-cyan-900 flex justify-center items-center">
+                    Add to Basket
+                  </button>
+                  <HeartButton></HeartButton>
                 </div>
               </div>
-              <ProductInformation element={information}></ProductInformation>
+              {/* <ProductInformation element={information}></ProductInformation> */}
             </div>
           ))}
         </div>
