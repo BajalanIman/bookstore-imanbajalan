@@ -218,7 +218,7 @@ const BookData = [
       },
       {
         id: 19,
-        name: "The Girl with the Dragon Tattoo",
+        name: "The Dragon Tattoo",
         price: 12.99,
         ISBN: "9780307949486",
         year: 2005,
@@ -1381,6 +1381,7 @@ const BookData = [
   },
   {
     id: 7,
+
     category: "Historical Fiction",
     books: [
       {

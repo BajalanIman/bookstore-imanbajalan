@@ -33,9 +33,11 @@ const SubCategories = () => {
             >
               <img className="w-82 h-64 pt-0" src={el.image} alt={el.name} />
               <div className="flex flex-col justify-start items-start w-full  gap-5">
-                <span className="text-2xl font-bold w-full pt-1 pl-14 h-16 flex justify-center items-center font-serif">
-                  {el.name}
-                </span>
+                <div className="flex w-full justify-center items-center">
+                  <span className="text-2xl font-bold  pt-1  h-16 flex justify-center items-center font-serif">
+                    {el.name}
+                  </span>
+                </div>
                 <div className="flex flex-col w-full text-xl font-serif pl-14  gap-2">
                   <span>
                     <span className="font-bold"> By: </span>
