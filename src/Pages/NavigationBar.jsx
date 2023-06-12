@@ -17,7 +17,7 @@ const NavigationBar = () => {
 
   return (
     <div className="w-full bg-slate-700 fexed flex flex-col sm:flex-row sm:flex items-center sm:gap-16 sm:h-20 sm:justify-center">
-      <div className="flex justify-center items-center bg-slate-800 px-2 mt-2 rounded sm:bg-slate-700 sm:px-0 sm:mt-0">
+      <div className="flex justify-center items-center bg-slate-800 px-2 mt-2 rounded-lg sm:bg-slate-700 sm:px-0 sm:mt-0">
         <div className="flex justify-center items-center">
           <Link to="/">
             <HomeButton></HomeButton>
@@ -50,7 +50,7 @@ const NavigationBar = () => {
         <input
           type="text"
           placeholder="Search..."
-          className=" w-80 sm:w-96 h-10 mb-5 mt-4 rounded pl-4 hover:bg-yellow-50 bg-red-50"
+          className=" w-80 sm:w-96 h-11 mb-5 mt-4 rounded pl-4 hover:bg-yellow-50 bg-red-50"
         />
         <div className="ml-[-30px]">
           <SearchButton />
