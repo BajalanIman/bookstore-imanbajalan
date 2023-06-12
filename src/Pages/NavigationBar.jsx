@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+import LoginButton from "../Components/SmalComponents/LoginButton";
+import HomeButton from "../Components/SmalComponents/HomeButton";
 import ChangeLanguage from "./ChangeLanguage";
-import Login from "./Login";
 import SearchButton from "../Components/SmalComponents/SearchButton";
 import BasketButton from "../Components/SmalComponents/BasketButton";
 
@@ -15,25 +16,30 @@ const NavigationBar = () => {
   // };
 
   return (
-    <div className="w-full bg-cyan-900 fexed flex flex-col sm:flex-row sm:flex items-center sm:gap-16 sm:h-20 sm:justify-center">
-      <div className="flex justify-center items-center">
+    <div className="w-full bg-slate-700 fexed flex flex-col sm:flex-row sm:flex items-center sm:gap-16 sm:h-20 sm:justify-center">
+      <div className="flex justify-center items-center bg-slate-800 px-2 mt-2 rounded sm:bg-slate-700 sm:px-0 sm:mt-0">
         <div className="flex justify-center items-center">
           <Link to="/">
-            <span className="sm:px-8 py-3 rounded hover:border cursor-pointer text-white font-bold hover:border-yellow-50 hover:text-yellow-50">
+            <HomeButton></HomeButton>
+            {/* <span className="sm:px-8 py-3 rounded hover:border cursor-pointer text-white font-bold hover:border-yellow-50 hover:text-yellow-50">
               Home
-            </span>
+            </span> */}
           </Link>
           <ChangeLanguage />
         </div>
-        <div className="flex">
+        <div className="flex justify-center items-center">
           <Link to="/login">
-            <span className="px-8 py-3 rounded hover:border cursor-pointer text-white font-bold hover:border-yellow-50 hover:text-yellow-50">
+            <LoginButton></LoginButton>
+            {/* <span className="px-8 py-3 rounded hover:border cursor-pointer text-white font-bold hover:border-yellow-50 hover:text-yellow-50">
               Login
-            </span>
+            </span> */}
           </Link>
           <div className="ml-8 flex flex-col items-center">
-            <p className="mb-[-10px] text-yellow-50 font-bold text-xs">22</p>
-
+            <div className="relative">
+              <p className=" text-yellow-50 font-bold text-xs  absolute top-1 left-[-5px]">
+                22
+              </p>
+            </div>
             <Link to="/basket">
               <BasketButton />
             </Link>

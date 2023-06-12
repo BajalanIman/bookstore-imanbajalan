@@ -1,13 +1,13 @@
 const BasketButton = () => {
   return (
-    <div>
+    <div className="w-12 h-12 flex justify-center items-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth="1.5"
         stroke="currentColor"
-        className="w-8 h-8 text-white"
+        className="w-8 h-8 text-yellow-50"
       >
         <path
           strokeLinecap="round"
