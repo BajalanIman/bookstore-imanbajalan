@@ -6,6 +6,38 @@ import HeartButton from "../Components/SmalComponents/HeartButton";
 import ProductInformation from "./ProductInformation";
 
 const SubCategories = () => {
+  const [cheapSort, setCheapSort] = useState(true);
+  const [expensiveSort, setExpensiveSort] = useState(false);
+  const [oldSort, setOldSort] = useState(false);
+  const [newSort, setNewSort] = useState(false);
+
+  const chepSortHandler = () => {
+    setCheapSort(true);
+    setExpensiveSort(false);
+    setOldSort(false);
+    setNewSort(false);
+  };
+
+  const expensiveSortHandler = () => {
+    setCheapSort(false);
+    setExpensiveSort(true);
+    setOldSort(false);
+    setNewSort(false);
+  };
+
+  const oldSortHandler = () => {
+    setCheapSort(false);
+    setExpensiveSort(false);
+    setOldSort(true);
+    setNewSort(false);
+  };
+  const newSortHandler = () => {
+    setCheapSort(false);
+    setExpensiveSort(false);
+    setOldSort(false);
+    setNewSort(true);
+  };
+
   const location = useLocation();
   const books = location.state.booklists || [];
   let basket = { id: "", name: "", price: null };
@@ -23,41 +55,75 @@ const SubCategories = () => {
   return (
     <div className="mb-4 text-sm font-light text-gray-500 dark:text-gray-400">
       <div className=" ml-6 mt-6 w-full flex justify-center"></div>
-      <div></div>
+
+      <div className="flex justify-center items-center gap-8 mt-0">
+        <button
+          className="font-serif text-slate-700 border border-white hover-text-black hover:border-1 hover:border-b-orange-500"
+          onClick={chepSortHandler}
+        >
+          Cheapest
+        </button>
+        <button
+          className="font-serif text-slate-700 border border-white hover-text-black hover:border-1 hover:border-b-orange-500"
+          onClick={expensiveSortHandler}
+        >
+          Expensive
+        </button>
+        <button
+          className="font-serif text-slate-700 border border-white hover-text-black hover:border-1 hover:border-b-orange-500"
+          onClick={oldSortHandler}
+        >
+          Old
+        </button>
+        <button
+          className="font-serif text-slate-700 border border-white hover-text-black hover:border-1 hover:border-b-orange-500"
+          onClick={newSortHandler}
+        >
+          New
+        </button>
+      </div>
       <div>
         <div className=" container m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {books.map((el) => (
-            <div
-              key={el.id}
-              className="sm:w-96 sm:h-[600px] flex flex-col justify-center items-center border shadow-lg rounded m-6"
-            >
-              <img className="w-82 h-64 pt-3" src={el.image} alt={el.name} />
-              <div className="flex flex-col justify-start items-start w-full  gap-5">
-                <div className="flex w-full justify-center items-center">
-                  <span className="text-2xl font-bold  pt-1  h-16 flex justify-center items-center font-serif">
-                    {el.name}
-                  </span>
-                </div>
-                <div className="flex flex-col w-full text-xl font-serif pl-14  gap-2">
-                  <span>
-                    <span className="font-bold"> By: </span>
-                    {el.author}
-                  </span>
-                  <span>
-                    <span className="font-bold"> year: </span>
-                    {el.year}
-                  </span>
-                  <span>
-                    <span className="font-bold"> Price: </span>
-                    {el.price} €
-                  </span>
-                  {/* <span>
+          {books
+            .sort(
+              (a, b) =>
+                (expensiveSort && (b.price > a.price ? 1 : -1)) ||
+                (cheapSort && (a.price > b.price ? 1 : -1)) ||
+                (newSort && (b.year > a.year ? 1 : -1)) ||
+                (oldSort && (a.year > b.year ? 1 : -1))
+            )
+            .map((el) => (
+              <div
+                key={el.id}
+                className="sm:w-96 sm:h-[600px] flex flex-col justify-center items-center border shadow-lg rounded m-6"
+              >
+                <img className="w-82 h-64 pt-3" src={el.image} alt={el.name} />
+                <div className="flex flex-col justify-start items-start w-full  gap-5">
+                  <div className="flex w-full justify-center items-center">
+                    <span className="text-2xl font-bold  pt-1  h-16 flex justify-center items-center font-serif">
+                      {el.name}
+                    </span>
+                  </div>
+                  <div className="flex flex-col w-full text-xl font-serif pl-14  gap-2">
+                    <span>
+                      <span className="font-bold"> By: </span>
+                      {el.author}
+                    </span>
+                    <span>
+                      <span className="font-bold"> year: </span>
+                      {el.year}
+                    </span>
+                    <span>
+                      <span className="font-bold"> Price: </span>
+                      {el.price} €
+                    </span>
+                    {/* <span>
                     <span className="font-bold"> ISBN: </span>
                     {el.ISBN}
                   </span>{" "} */}
-                </div>
-                <div className="w-full h-8 px-14 flex gap-6 justify-center">
-                  {/* <div
+                  </div>
+                  <div className="w-full h-8 px-14 flex gap-6 justify-center">
+                    {/* <div
                     key={el.id}
                     className="flex gap-3 justify-center items-center"
                   >
@@ -86,22 +152,22 @@ const SubCategories = () => {
                       alt="plus"
                     />
                   </div> */}
+                  </div>
+                  <div className="w-full flex justify-center items-center space-x-8">
+                    <img
+                      onClick={infoBtnHandler}
+                      src="../public/InformationBTN.png"
+                      alt="information"
+                    />
+                    <button className="text-yellow-50 py-2 px-10 rounded hover:bg-cyan-700 bg-cyan-900 flex justify-center items-center mb-5">
+                      Add to Basket
+                    </button>
+                    <HeartButton></HeartButton>
+                  </div>
                 </div>
-                <div className="w-full flex justify-center items-center space-x-8">
-                  <img
-                    onClick={infoBtnHandler}
-                    src="../public/InformationBTN.png"
-                    alt="information"
-                  />
-                  <button className="text-yellow-50 py-2 px-10 rounded hover:bg-cyan-700 bg-cyan-900 flex justify-center items-center mb-5">
-                    Add to Basket
-                  </button>
-                  <HeartButton></HeartButton>
-                </div>
+                {/* <ProductInformation element={information}></ProductInformation> */}
               </div>
-              {/* <ProductInformation element={information}></ProductInformation> */}
-            </div>
-          ))}
+            ))}
         </div>
       </div>
     </div>
