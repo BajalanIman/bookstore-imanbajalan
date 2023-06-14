@@ -46,7 +46,7 @@ const ChangeLanguage = () => {
           </span>
         </div>
         {showAllLanguage && (
-          <div className="w-44 mt-12 p-2 border border-gray-500 bg-white rounded-xl">
+          <div className="w-44 mt-12 p-2 border border-gray-500 bg-white rounded-xl absolute h-1">
             <div className="flex items-center gap-1 bg-white p-1 text-black cursor-pointer py-2 hover:text-blue-500 hover:bg-red-100 active:text-red-800 ">
               <img
                 className="w-9 h-6"
