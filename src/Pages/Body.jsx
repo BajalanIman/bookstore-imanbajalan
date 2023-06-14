@@ -14,7 +14,7 @@ const Body = () => {
 
   return (
     <div>
-      <div className="sm:w-full h-screen font-sans flex justify-center sm:mt-8">
+      <div className="sm:w-full h-screen font-sans flex justify-center sm:mt-8 dark:text-white">
         <div className="container m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {bookCategories.map((e) => (
             <div
@@ -25,9 +25,9 @@ const Body = () => {
                 Navigate("/products", { state: { booklists } });
               }}
               key={e.id}
-              className="sm:w-96 sm:h-96 flex flex-col justify-center items-center border shadow-lg rounded m-6 hover:scale-110 cursor-pointer hover:bg-yellow-50"
+              className="sm:w-96 sm:h-96 flex flex-col justify-center items-center border shadow-lg rounded m-6 hover:scale-110 cursor-pointer hover:bg-yellow-50 hover:`dark:`text-green-500 "
             >
-              <p className="text-black pb-7 text-2xl mt-6 font-bold font-serif">
+              <p className="text-black pb-7 text-2xl mt-6 font-bold font-serif dark:text-white">
                 {e.category}
               </p>
               <img

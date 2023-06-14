@@ -32,7 +32,7 @@ function App() {
   return (
     <>
       {/* <NavigationBar /> */}
-      <div className="flex flex-col bg-white text-xl w-full h-screen">
+      <div className="flex flex-col dark:text-white text-xl w-full h-screen">
         <RouterProvider router={router} />
         {/* <Body /> */}
         <div>

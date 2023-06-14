@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { DarkModeSwitch } from "react-toggle-dark-mode";
 
 import LoginButton from "../Components/SmalComponents/LoginButton";
 import HomeButton from "../Components/SmalComponents/HomeButton";
@@ -7,8 +8,17 @@ import ChangeLanguage from "./ChangeLanguage";
 import SearchButton from "../Components/SmalComponents/SearchButton";
 import BasketButton from "../Components/SmalComponents/BasketButton";
 
-const NavigationBar = () => {
+const NavigationBar = ({ darkModeHandler }) => {
   let showLoginPage = false;
+
+  // const [colorTheme, setColorTheme] = useState();
+  const [darkSide, setDarkside] = useState(false);
+
+  const darkModeHandlers = (checked) => {
+    setDarkside(checked);
+    darkModeHandler(!darkSide);
+  };
+
   // const [loginPage, setLoginPage] = useState(showLoginPage);
 
   // const changeLoginHandler = () => {
@@ -16,8 +26,9 @@ const NavigationBar = () => {
   // };
 
   return (
-    <div className="w-full bg-slate-700 fexed flex flex-col sm:flex-row sm:flex items-center sm:gap-16 sm:h-20 sm:justify-center">
+    <div className="w-full bg-red-700 dark:bg-black fexed flex flex-col sm:flex-row sm:flex items-center sm:gap-16 sm:h-20 sm:justify-center">
       <div className="flex justify-center items-center bg-slate-800 px-2 mt-2 rounded-lg sm:bg-slate-700 sm:px-0 sm:mt-0">
+        <DarkModeSwitch checked={darkSide} onChange={darkModeHandlers} />
         <div className="flex justify-center items-center">
           <Link to="/">
             <HomeButton></HomeButton>
