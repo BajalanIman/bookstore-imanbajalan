@@ -26,8 +26,8 @@ const NavigationBar = ({ darkModeHandler }) => {
   // };
 
   return (
-    <div className="w-full bg-red-700 dark:bg-black fexed flex flex-col sm:flex-row sm:flex items-center sm:gap-16 sm:h-20 sm:justify-center">
-      <div className="flex justify-center items-center bg-slate-800 px-2 mt-2 rounded-lg sm:bg-slate-700 sm:px-0 sm:mt-0">
+    <div className="w-full bg-slate-400 dark:bg-slate-900 fexed flex flex-col sm:flex-row sm:flex items-center sm:gap-16 sm:h-20 sm:justify-center">
+      <div className="flex justify-center items-center bg-slate-800 pl-6 mt-2 rounded-lg sm:bg-slate-700 sm:px-0 sm:mt-0">
         <DarkModeSwitch checked={darkSide} onChange={darkModeHandlers} />
         <div className="flex justify-center items-center">
           <Link to="/">
