@@ -35,7 +35,7 @@ const CreateAccount = () => {
 
   const nameSubmitHandler = (event) => {
     setNameSubmit(event.target.value);
-    console.log(setNameSubmit);
+    // console.log(setNameSubmit);
   };
 
   const familySubmitHandler = (event) => {

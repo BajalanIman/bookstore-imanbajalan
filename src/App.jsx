@@ -1,14 +1,16 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import { useState } from "react";
+import { useState, createContext, useEffect } from "react";
 
-import NavigationBar from "./Pages/NavigationBar";
 import Body from "./Pages/Body";
 import SubCategories from "./Pages/SubCategories";
 import CreateAccount from "./Pages/CreateAccount";
 import Basket from "./Pages/Basket";
 import RootLayout from "./Pages/RootLayout";
 import Login from "./Pages/Login";
+import Purchase from "./Pages/Purchase";
+
+export const CartContext = createContext({ 123: 1 });
 
 const router = createBrowserRouter([
   {
@@ -18,7 +20,13 @@ const router = createBrowserRouter([
       { path: "", element: <Body /> },
       { path: "/products", element: <SubCategories /> },
       { path: "/createaccount", element: <CreateAccount /> },
-      { path: "/basket", element: <Basket /> },
+      { path: "purchase", element: <Purchase /> },
+      {
+        path: "basket",
+        element: <Basket />,
+        children: [{ path: "purchase", element: <Purchase /> }],
+      },
+
       {
         path: "/login",
         element: <Login />,
@@ -29,17 +37,24 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  const [cartItems, setCartItems] = useState([]);
+  const [totalPrice, setTotalPrice] = useState();
+
+  useEffect(() => {
+    let total = 0;
+    cartItems.map((el) =>
+      el.forEach((element) => (total = total + element.price))
+    );
+    setTotalPrice(total);
+  }, [cartItems]);
+
   return (
     <>
-      {/* <NavigationBar /> */}
-      <div className="flex flex-col dark:text-white text-xl w-full h-screen">
-        <RouterProvider router={router} />
-        {/* <Body /> */}
-        <div>
-          {/*<Login></Login> */}
-          {/* <CreateAccount></CreateAccount> */}
+      <CartContext.Provider value={{ cartItems, totalPrice, setCartItems }}>
+        <div className="flex flex-col dark:text-white text-xl w-full h-screen">
+          <RouterProvider router={router} />
         </div>
-      </div>
+      </CartContext.Provider>
     </>
   );
 }

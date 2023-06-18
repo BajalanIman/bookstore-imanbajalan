@@ -4,6 +4,9 @@ import NavigationBar from "./NavigationBar";
 
 const RootLayout = () => {
   const [darkSide, setDarkside] = useState(false);
+
+  const [count, setCount] = useState(123456789);
+
   const darkModeHandler = (darkSide) => {
     // setColorTheme(colorTheme);
     setDarkside(!darkSide);
@@ -14,7 +17,7 @@ const RootLayout = () => {
     ${darkSide ? "dark" : ""}`}
     >
       <NavigationBar darkModeHandler={darkModeHandler} />
-      <Outlet></Outlet>
+      <Outlet context={[count, setCount]}></Outlet>
     </div>
   );
 };

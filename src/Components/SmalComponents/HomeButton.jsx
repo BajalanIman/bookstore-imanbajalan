@@ -1,6 +1,6 @@
 const BackButton = () => {
   return (
-    <div className="w-12 h-12 flex justify-center items-center">
+    <div className=" text-white fill-white sm:hover:border sm:hover:border-white sm:px-4 sm:py-3 h-full rounded">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
