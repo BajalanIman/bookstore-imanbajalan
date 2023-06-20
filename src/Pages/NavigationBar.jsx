@@ -4,15 +4,16 @@ import { DarkModeSwitch } from "react-toggle-dark-mode";
 import { CartContext } from "../App";
 
 import LoginButton from "../Components/SmalComponents/LoginButton";
+import LogoutButton from "../Components/SmalComponents/LogoutButton";
+import LogOutpage from "../Components/SubCategories/Logout/LogOutPage";
 import HomeButton from "../Components/SmalComponents/HomeButton";
 import ChangeLanguage from "./ChangeLanguage";
 import SearchButton from "../Components/SmalComponents/SearchButton";
 import BasketButton from "../Components/SmalComponents/BasketButton";
-import WishLListIcon from "../Components/SmalComponents/WishLListIcon";
+// import WishLListIcon from "../Components/SmalComponents/WishLListIcon";
 
 const NavigationBar = ({ darkModeHandler }) => {
   const nameInLocaleStorage = localStorage.getItem("name");
-  const [nameFromLocalStorage, setNameFromLocalStorage] = useState("");
 
   useEffect(() => {
     if (nameInLocaleStorage) {
@@ -36,29 +37,75 @@ const NavigationBar = ({ darkModeHandler }) => {
     darkModeHandler(!darkSide);
   };
 
+  const [loginLogout, setLoginLogout] = useState();
+  let checkNameFromLocal = localStorage.getItem("name");
+
+  useEffect(() => {
+    setLoginLogout(checkNameFromLocal);
+  }, [loginLogout]);
+  console.log(loginLogout);
+
+  const [changeLogoutPage, setChangeLogoutPage] = useState(false);
+
+  const LogOutHandler = () => {
+    setChangeLogoutPage(!changeLogoutPage);
+    // localStorage.removeItem("name");
+    // localStorage.removeItem("Password");
+    // location.reload();
+  };
+
   return (
     <div className="w-full bg-slate-700 dark:bg-slate-900 fexed flex flex-col sm:flex-row sm:flex items-center sm:gap-16 sm:h-20 sm:justify-center mt-[-8px]">
-      <div className="flex justify-center items-center bg-slate-800 dark:bg-slate-800 dark:sm:bg-slate-900 px-6 mt-2 rounded-lg sm:bg-slate-700 sm:px-0 sm:mt-0">
-        <div className="flex justify-center items-center gap-5 sm:gap-6 sm:pl-6 sm:pr-6">
-          <div className=" sm:pr-10">
+      <div className="flex justify-center items-center bg-slate-800 dark:bg-slate-800 dark:sm:bg-slate-900 w-80 mt-2 rounded-lg sm:bg-slate-700 sm:px-0 sm:mt-0">
+        {changeLogoutPage && (
+          <LogOutpage setChangeLogoutPage={setChangeLogoutPage} />
+        )}
+        <div className="flex justify-between items-center w-full pl-4 pr-4">
+          <div className="w-2/5 ">
+            <a
+              href="https://www.linkedin.com/in/iman-bajalan-ab52a045/"
+              target="_blank"
+            >
+              <img
+                className="sm:h-16 sm:w-16 h-8 w-8 rounded-full"
+                src="../public/Iman-NavigationBar-Logo.png"
+                alt="Logo"
+              />
+            </a>
+          </div>
+
+          <div className="w-1/5 sm:ml-0 ">
+            <Link to="/">
+              <HomeButton></HomeButton>
+            </Link>
+          </div>
+          <div className="w-1/5 mr-12">
+            <ChangeLanguage />
+          </div>
+          <div className="flex justify-center items-center ml-2  hover:border hover:rounded w-24 h-16 ">
             <DarkModeSwitch
               checked={darkSide}
               onChange={darkModeHandlers}
               className=" text-white fill-white"
             />
           </div>
-          <Link to="/">
-            <HomeButton></HomeButton>
-          </Link>
-          <ChangeLanguage />
+        </div>
+      </div>
 
+      <div className="flex justify-center items-center sm:gap-8 ">
+        {/* <WishLListIcon /> */}
+
+        {!loginLogout && (
           <Link to="/login">
             <LoginButton></LoginButton>
           </Link>
-        </div>
-      </div>
-      <div className="flex justify-center items-center sm:gap-8">
-        <WishLListIcon />
+        )}
+        {loginLogout && (
+          <div onClick={LogOutHandler}>
+            <LogoutButton />
+          </div>
+        )}
+
         <input
           type="text"
           placeholder="Search..."

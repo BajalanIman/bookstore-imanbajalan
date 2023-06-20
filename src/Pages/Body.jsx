@@ -19,7 +19,7 @@ const Body = () => {
   let bookCategories = BookData;
   const Navigate = useNavigate();
   // let booklists = "";
-  console.table(BookData.map((el) => el.category));
+  // console.table(BookData.map((el) => el.category));
 
   return (
     <div>

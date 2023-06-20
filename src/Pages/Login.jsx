@@ -43,6 +43,7 @@ const Login = () => {
       setUsernameSubmit("");
       setPasswordSubmit("");
       navigate("/");
+      location.reload();
     }
   }
 
@@ -50,7 +51,7 @@ const Login = () => {
     <div className="fixed left-0 top-0 flex h-full w-full items-center justify-center bg-white dark:bg-gray-800 sm:pb-24">
       <div className="flex justify-center items-center sm:w-[300-px] sm:h-[800px] bg-white dark:bg-gray-800 p-8">
         <form
-          className=" relative flex flex-col justify-center items-center border rounded pb-8 shadow-lg shadow-gray-400 w-80 sm:w-96 dark:bg-gray-800"
+          className=" relative flex flex-col justify-center items-center border rounded pb-8 shadow-lg shadow-gray-400 w-80 sm:w-96 dark:bg-gray-800 mt-16"
           onSubmit={sumitLoginForm}
         >
           <div className=" flex w-full justify-end items-end pt-4 pr-6">
@@ -61,8 +62,8 @@ const Login = () => {
           <div className="w-44 h-44 rounded-full mt-6 flex justify-center items-center border shadow-lg text-gray-400 shadow-gray-400 dark:bg-white">
             <img
               className="w-38 rounded-full m-0 p-0"
-              src="../public/Logo-2.PNG"
-              alt=""
+              src="../public/Iman-Book-Logo.png"
+              alt="logo"
             />
           </div>
 

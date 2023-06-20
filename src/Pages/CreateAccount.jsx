@@ -100,17 +100,17 @@ const CreateAccount = () => {
 
   return (
     <div className="flex justify-center items-center dark:bg-gray-800">
-      <form className=" flex flex-col justify-center items-center border shadow-xl shadow-slate-500 mt-0 sm:mt-14 pb-6 rounded w-10/12 sm:w-96">
+      <form className=" flex flex-col justify-center items-center border shadow-xl shadow-slate-500 sm:mt-10 pb-6 rounded w-10/12 sm:w-96 mt-6">
         <div className=" flex w-full justify-end items-end pt-4 pr-6">
           <Link to="/">
-            <span className=" cursor-pointer text-3xl">&#x2715;</span>
+            <span className=" cursor-pointer text-2xl">&#x2715;</span>
           </Link>
         </div>
-        <p className="text-red-500 text-sm font-bold mb-6 w-[500px] h-12 flex justify-center ittems-center">
+        <p className="text-red-500 text-sm font-bold h-8 w-full flex justify-center ittems-center">
           {errorMessage}
         </p>
-        <div className="flex h-14 sm:h-16 sm:w-80 border border-cyan-600 rounded mb-6">
-          <div className="absolute mt-4 ml-2">
+        <div className="flex h-12 sm:w-80 border border-cyan-600 rounded mb-2">
+          <div className="absolute mt-2 ml-2">
             <NameIcon></NameIcon>
           </div>
           <input
@@ -121,8 +121,8 @@ const CreateAccount = () => {
             placeholder="Name"
           />
         </div>
-        <div className="flex h-14 sm:h-16 sm:w-80 border border-cyan-600 rounded mb-6">
-          <div className="absolute mt-4 ml-2">
+        <div className="flex h-12 sm:w-80 border border-cyan-600 rounded mb-2">
+          <div className="absolute mt-2 ml-2">
             <FamilyNameIcon></FamilyNameIcon>
           </div>
           <input
@@ -133,8 +133,8 @@ const CreateAccount = () => {
             placeholder="Family name"
           />
         </div>
-        <div className="flex h-14 sm:h-16 sm:w-80 border border-cyan-600 rounded mb-6">
-          <div className="absolute mt-4 ml-2">
+        <div className="flex h-12 sm:w-80 border border-cyan-600 rounded mb-2">
+          <div className="absolute mt-2 ml-2">
             <EmailIcon></EmailIcon>
           </div>
           <input
@@ -145,8 +145,8 @@ const CreateAccount = () => {
             placeholder="Email Address"
           />
         </div>
-        <div className="flex h-14 sm:h-16 sm:w-80 border border-cyan-600 rounded mb-6">
-          <div className="absolute mt-4 ml-2">
+        <div className="flex h-12 sm:w-80 border border-cyan-600 rounded mb-2">
+          <div className="absolute mt-2 ml-2">
             <PasswordIcon></PasswordIcon>
           </div>
           <input
@@ -156,7 +156,7 @@ const CreateAccount = () => {
             className="flex h-full w-full border pl-12 border-cyan-600 rounded  hover:bg-yellow-50 text-base"
             placeholder="Password"
           />
-          <div className="absolute justify-end mt-4 ml-48 sm:ml-64">
+          <div className="absolute justify-end mt-2 ml-48 sm:ml-64">
             <div onClick={setPassword}>
               {showPassword && <ShowPasswordIcon></ShowPasswordIcon>}
               {!showPassword && <HidePasswordIcon></HidePasswordIcon>}
@@ -188,7 +188,7 @@ const CreateAccount = () => {
             />
           </div>
         </div> */}
-        <div className="flex h-36 sm:h-48 sm:w-80 border border-cyan-600 rounded mb-6">
+        <div className="flex h-28 sm:h-28 sm:w-80 border border-cyan-600 rounded mb-6">
           <input
             type="textarea"
             className="flex h-full w-full border pl-12 border-cyan-600 rounded  hover:bg-yellow-50 text-base"
@@ -196,7 +196,7 @@ const CreateAccount = () => {
           />
         </div>
 
-        <div className="flex justify-center items-center h-16 sm:w-80 w-60 border border-black bg-cyan-900 text-yellow-50 hover:bg-cyan-600 text-2xl cursor-pointer rounded-full mb-5">
+        <div className="flex justify-center items-center h-12 sm:w-80 w-60 border border-black bg-cyan-900 text-yellow-50 hover:bg-cyan-600 text-2xl cursor-pointer rounded-full mb-3">
           <button onClick={sumitLoginForm} className="w-full h-full text-base">
             Create Account
           </button>
