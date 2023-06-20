@@ -37,10 +37,10 @@ const NavigationBar = ({ darkModeHandler }) => {
   };
 
   return (
-    <div className="w-full bg-slate-400 dark:bg-slate-900 fexed flex flex-col sm:flex-row sm:flex items-center sm:gap-16 sm:h-20 sm:justify-center mt-[-8px]">
-      <div className="flex justify-center items-center bg-slate-800 px-6 mt-2 rounded-lg sm:bg-slate-400 sm:px-0 sm:mt-0">
+    <div className="w-full bg-slate-700 dark:bg-slate-900 fexed flex flex-col sm:flex-row sm:flex items-center sm:gap-16 sm:h-20 sm:justify-center mt-[-8px]">
+      <div className="flex justify-center items-center bg-slate-800 dark:bg-slate-800 dark:sm:bg-slate-900 px-6 mt-2 rounded-lg sm:bg-slate-700 sm:px-0 sm:mt-0">
         <div className="flex justify-center items-center gap-5 sm:gap-6 sm:pl-6 sm:pr-6">
-          <div className="">
+          <div className=" sm:pr-10">
             <DarkModeSwitch
               checked={darkSide}
               onChange={darkModeHandlers}
@@ -62,11 +62,11 @@ const NavigationBar = ({ darkModeHandler }) => {
         <input
           type="text"
           placeholder="Search..."
-          className=" w-80 sm:w-96 h-11 mb-5 mt-4 rounded pl-4 hover:bg-yellow-50 bg-red-50 ml-2"
+          className=" w-72 sm:w-96 h-11 mb-5 mt-4 rounded pl-4 hover:bg-yellow-50 bg-red-50 ml-2 text-sm"
         />
-        <div className="ml-[-30px]">
+        {/* <div className="ml-[-30px]">
           <SearchButton />
-        </div>
+        </div> */}
         <div className="ml-2 flex flex-col items-center">
           <div className="relative">
             <p className=" text-yellow-50 font-bold text-xs  absolute sm:top-1 left-[-4px]">

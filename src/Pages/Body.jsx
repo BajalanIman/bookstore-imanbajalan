@@ -18,11 +18,16 @@ const Body = () => {
   //   const [booklists, setBooklists] = useState();
   let bookCategories = BookData;
   const Navigate = useNavigate();
+  // let booklists = "";
+  console.table(BookData.map((el) => el.category));
 
   return (
     <div>
-      <div className="sm:w-full h-screen font-sans flex justify-center sm:mt-8">
-        <div className="container m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="sm:w-full h-screen font-sans flex justify-center sm:mt-16 mt-12 mb-6">
+        {/* <p className="absolute top-36  sm:top-24  text-xs font-serif animate-pulse">
+          Created by Iman Bajalan
+        </p> */}
+        <div className="m-auto grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 gap-4 mt-8">
           {bookCategories.map((e) => (
             <div
               onClick={() => {
@@ -33,18 +38,21 @@ const Body = () => {
                 });
               }}
               key={e.id}
-              className="sm:w-96 sm:h-96 flex flex-col justify-center items-center border shadow-lg rounded m-6 hover:scale-110 cursor-pointer dark:hover:bg-gray-500 "
+              className="sm:w-48 sm:h-72 w-72 flex flex-col justify-center items-center border shadow-lg rounded mr-6  hover:scale-110 cursor-pointer hover:bg-yellow-100  dark:hover:bg-gray-500 "
             >
-              <p className="text-black pb-7 text-2xl mt-6 font-bold font-serif dark:text-white ">
+              <p className="text-black pb-7 text-lg mt-6 font-bold font-serif dark:text-white ">
                 {localize(language, e.category)}
               </p>
               <img
-                className="h-72 border mb-8 rounded opacity-90"
+                className="h-48 w-32 border mb-8 rounded opacity-90"
                 src={e.image}
                 alt={e.image}
               />
             </div>
           ))}
+          <p className=" text-xs font-serif animate-pulse">
+            {localize(language, "AppCreator")}
+          </p>
         </div>
         {/* {showSubCatagories && (
           <SubCategories booklists={booklists}></SubCategories>

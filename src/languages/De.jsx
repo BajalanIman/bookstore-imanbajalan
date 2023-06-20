@@ -29,4 +29,5 @@ export default {
   Old: "Alt",
   expensive: "teuer",
   cheap: "billig",
+  AppCreator: "Diese App wurde von Iman Bajalan erstellt.",
 };
