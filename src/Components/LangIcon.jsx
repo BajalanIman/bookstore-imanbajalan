@@ -7,7 +7,7 @@ const LangIcon = () => {
         viewBox="0 0 24 24"
         strokeWidth="1.5"
         stroke="currentColor"
-        className="w-6 h-6 text-yellow-50 mt-1"
+        className="w-6 h-6 mt-1"
       >
         <path
           strokeLinecap="round"

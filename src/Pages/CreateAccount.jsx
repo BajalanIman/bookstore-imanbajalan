@@ -1,16 +1,16 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import NameIcon from "../Components/LoginComponents/NameIcon";
 import FamilyNameIcon from "../Components/LoginComponents/FamilyNameIcon";
 import EmailIcon from "../Components/LoginComponents/EmailIcon";
-import HomeButton from "../Components/SmalComponents/HomeButton";
 import PasswordIcon, {
   ShowPasswordIcon,
   HidePasswordIcon,
 } from "../Components/LoginComponents/PasswordIcon";
 
 const CreateAccount = () => {
+  const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const setPassword = () => {
@@ -80,28 +80,36 @@ const CreateAccount = () => {
     localStorage.setItem("Family", family);
     localStorage.setItem("Email", email);
     localStorage.setItem("Password", Password);
-    setNameSubmit("");
-    setFamilySubmit("");
-    setEmailSubmit("");
-    setPasswordSubmit("");
+
+    if (nameSubmit && passwordSubmit) {
+      setNameSubmit("");
+      setFamilySubmit("");
+      setEmailSubmit("");
+      setPasswordSubmit("");
+      navigate("/");
+    } else {
+      setErrorMessage("Name and password are necesary!");
+
+      setTimeout(() => {
+        setErrorMessage();
+      }, 2000);
+    }
+
     // }
   }
 
   return (
-    <div className="flex justify-center items-center">
-      <form
-        className=" flex flex-col justify-center items-center border shadow-xl shadow-slate-500 mt-14 pb-6 rounded"
-        onSubmit={sumitLoginForm}
-      >
+    <div className="flex justify-center items-center dark:bg-gray-800">
+      <form className=" flex flex-col justify-center items-center border shadow-xl shadow-slate-500 mt-0 sm:mt-14 pb-6 rounded w-10/12 sm:w-96">
         <div className=" flex w-full justify-end items-end pt-4 pr-6">
           <Link to="/">
-            <span className="text-black cursor-pointer text-3xl">&#x2715;</span>
+            <span className=" cursor-pointer text-3xl">&#x2715;</span>
           </Link>
         </div>
-        <p className="text-red-500 text-2xl font-bold pb-3 mb-6 w-[500px] h-12 flex justify-center ittems-center">
+        <p className="text-red-500 text-sm font-bold mb-6 w-[500px] h-12 flex justify-center ittems-center">
           {errorMessage}
         </p>
-        <div className="flex h-16 w-96 border border-cyan-600 rounded mb-3">
+        <div className="flex h-14 sm:h-16 sm:w-80 border border-cyan-600 rounded mb-6">
           <div className="absolute mt-4 ml-2">
             <NameIcon></NameIcon>
           </div>
@@ -109,11 +117,11 @@ const CreateAccount = () => {
             value={nameSubmit}
             onChange={nameSubmitHandler}
             type="text"
-            className="flex h-full w-full border pl-12 border-cyan-600 rounded hover:bg-yellow-50"
+            className="flex h-full w-full border pl-12 border-cyan-600 rounded hover:bg-yellow-50 text-base"
             placeholder="Name"
           />
         </div>
-        <div className="flex h-16 w-96 border border-cyan-600 rounded mb-3">
+        <div className="flex h-14 sm:h-16 sm:w-80 border border-cyan-600 rounded mb-6">
           <div className="absolute mt-4 ml-2">
             <FamilyNameIcon></FamilyNameIcon>
           </div>
@@ -121,11 +129,11 @@ const CreateAccount = () => {
             value={familySubmit}
             onChange={familySubmitHandler}
             type="text"
-            className="flex h-full w-full border pl-12 border-cyan-600 rounded  hover:bg-yellow-50"
+            className="flex h-full w-full border pl-12 border-cyan-600 rounded  hover:bg-yellow-50 text-base"
             placeholder="Family name"
           />
         </div>
-        <div className="flex h-16 w-96 border border-cyan-600 rounded mb-3">
+        <div className="flex h-14 sm:h-16 sm:w-80 border border-cyan-600 rounded mb-6">
           <div className="absolute mt-4 ml-2">
             <EmailIcon></EmailIcon>
           </div>
@@ -133,11 +141,11 @@ const CreateAccount = () => {
             value={emailSubmit}
             onChange={emailSubmitHandler}
             type="text"
-            className="flex h-full w-full border pl-12 border-cyan-600 rounded  hover:bg-yellow-50"
+            className="flex h-full w-full border pl-12 border-cyan-600 rounded  hover:bg-yellow-50 text-base"
             placeholder="Email Address"
           />
         </div>
-        <div className="flex h-16 w-96 border border-cyan-600 rounded mb-6">
+        <div className="flex h-14 sm:h-16 sm:w-80 border border-cyan-600 rounded mb-6">
           <div className="absolute mt-4 ml-2">
             <PasswordIcon></PasswordIcon>
           </div>
@@ -145,10 +153,10 @@ const CreateAccount = () => {
             onChange={passwordSubmitHandler}
             value={passwordSubmit}
             type={showPassword ? "text" : "password"}
-            className="flex h-full w-full border pl-12 border-cyan-600 rounded  hover:bg-yellow-50"
+            className="flex h-full w-full border pl-12 border-cyan-600 rounded  hover:bg-yellow-50 text-base"
             placeholder="Password"
           />
-          <div className="absolute justify-end mt-4 ml-80">
+          <div className="absolute justify-end mt-4 ml-48 sm:ml-64">
             <div onClick={setPassword}>
               {showPassword && <ShowPasswordIcon></ShowPasswordIcon>}
               {!showPassword && <HidePasswordIcon></HidePasswordIcon>}
@@ -157,7 +165,7 @@ const CreateAccount = () => {
         </div>
 
         {/* Address */}
-        <div className="flex gap-2">
+        {/* <div className="flex gap-2">
           <div className="flex h-16 w-32 border border-cyan-600 rounded mb-6">
             <input
               type="textarea"
@@ -179,20 +187,19 @@ const CreateAccount = () => {
               placeholder="Country"
             />
           </div>
-        </div>
-        <div className="flex h-44 w-96 border border-cyan-600 rounded mb-6">
-          <div className="absolute mt-16">
-            <HomeButton></HomeButton>
-          </div>
+        </div> */}
+        <div className="flex h-36 sm:h-48 sm:w-80 border border-cyan-600 rounded mb-6">
           <input
             type="textarea"
-            className="flex h-full w-full border pl-12 border-cyan-600 rounded  hover:bg-yellow-50"
-            placeholder="Extra address"
+            className="flex h-full w-full border pl-12 border-cyan-600 rounded  hover:bg-yellow-50 text-base"
+            placeholder="Address"
           />
         </div>
 
-        <div className="flex justify-center items-center h-16 w-96 border border-black bg-cyan-900 text-yellow-50 hover:bg-cyan-600 text-2xl cursor-pointer rounded-full mb-5">
-          <button className="w-full h-full">Create Account</button>
+        <div className="flex justify-center items-center h-16 sm:w-80 w-60 border border-black bg-cyan-900 text-yellow-50 hover:bg-cyan-600 text-2xl cursor-pointer rounded-full mb-5">
+          <button onClick={sumitLoginForm} className="w-full h-full text-base">
+            Create Account
+          </button>
         </div>
       </form>
     </div>

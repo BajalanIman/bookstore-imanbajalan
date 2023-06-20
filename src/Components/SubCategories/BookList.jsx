@@ -25,18 +25,23 @@ const BookList = ({ books, handleAddToBasket }) => {
   return books.map((el) => (
     <div
       key={el.id}
-      className="flex flex-col justify-center items-center border shadow-lg rounded m-4 p-2"
+      className="flex flex-col justify-center items-center border shadow-lg rounded m-4 p-2 sm:max-w-48 lg-max-w-48"
     >
       <img className="w-88 h-64 pt-3" src={el.image} alt={el.name} />
       <div className="flex flex-col justify-start items-start w-full">
         <div className="flex w-full justify-center items-center">
-          <div className="mt-3 flex justify-start items-center font-serif whitespace-nowrap overflow-hidden text-ellipsis w-1/2">
+          {/* <div className="mt-3 flex justify-start items-center font-serif whitespace-nowrap overflow-hidden text-ellipsis w-1/2">
             <span className="text-lg font-bold  pt-1 w-62 truncate">
               {el.name}
             </span>
-          </div>
+          </div> */}
         </div>
-        <div className="flex flex-col justify-center items-start pl-20 w-full text-sm font-serif">
+        <div className="flex flex-col justify-center items-start pl-14 w-full text-sm font-serif ">
+          <div className="mt-3 flex justify-start items-center font-serif whitespace-nowrap overflow-hidden text-ellipsis w-1/2">
+            <span className="text-lg font-bold  pt-1 w-72 truncate">
+              {el.name}
+            </span>
+          </div>
           <span className=" text-gray-400 pb-1">
             <span className="font-bold">{localize(language, "By")}: </span>
             {el.author}
