@@ -5,7 +5,7 @@ import { CartContext } from "../App";
 
 import LoginButton from "../Components/SmalComponents/LoginButton";
 import LogoutButton from "../Components/SmalComponents/LogoutButton";
-import LogOutpage from "../Components/SubCategories/Logout/LogOutPage";
+import LogOutpage from "../Components/Logout/LogOutPage";
 import HomeButton from "../Components/SmalComponents/HomeButton";
 import ChangeLanguage from "./ChangeLanguage";
 import SearchButton from "../Components/SmalComponents/SearchButton";
