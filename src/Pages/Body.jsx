@@ -23,7 +23,7 @@ const Body = () => {
 
   return (
     <div>
-      <div className="sm:w-full h-screen font-sans flex justify-center sm:mt-16 mt-12 mb-6">
+      <div className="sm:w-full h-screen font-sans flex justify-center sm:mt-16 mt-12 mb-6 dark:bg-gray-800">
         {/* <p className="absolute top-36  sm:top-24  text-xs font-serif animate-pulse">
           Created by Iman Bajalan
         </p> */}
