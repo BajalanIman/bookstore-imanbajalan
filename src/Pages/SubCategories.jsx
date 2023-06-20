@@ -15,7 +15,7 @@ const SubCategories = () => {
   const SORT_NEW = `${localize(language, "New")}`;
 
   const { cartItems, setCartItems } = useContext(CartContext);
-  const [sortType, setSortType] = useState(SORT_NEW);
+  const [sortType, setSortType] = useState("");
 
   // const [cheapSort, setCheapSort] = useState(true);
   // const [expensiveSort, setExpensiveSort] = useState(false);
@@ -85,12 +85,13 @@ const SubCategories = () => {
       <div className=" ml-6 w-full flex justify-center mt-14"></div>
       <div className="flex justify-center items-center w-full absolute gap-8 mt-0">
         <FilterBooksBTN name={SORT_NEW} sortHandler={newSortHandler} />
+        <FilterBooksBTN name={SORT_OLD} sortHandler={oldSortHandler} />
+
         <FilterBooksBTN name={SORT_CHEAP} sortHandler={chepSortHandler} />
         <FilterBooksBTN
           name={SORT_EXPENSIVE}
           sortHandler={expensiveSortHandler}
         />
-        <FilterBooksBTN name={SORT_OLD} sortHandler={oldSortHandler} />
 
         {/* <button
           className="font-serif text-slate-700 border border-white hover-text-black hover:border-1 hover:border-b-orange-500"
