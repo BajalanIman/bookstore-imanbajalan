@@ -959,7 +959,7 @@ const BookData = [
   },
   {
     id: 5,
-    category: "Science Fiction",
+    category: "ScienceFiction",
     image: "https://bilder.buecher.de/produkte/59/59402/59402745n.jpg",
     books: [
       {
@@ -1414,7 +1414,7 @@ const BookData = [
   {
     id: 7,
 
-    category: "Historical Fiction",
+    category: "HistoricalFiction",
     image:
       "https://static01.nyt.com/images/2022/10/01/books/01HARRIS-COVER/01HARRIS-COVER-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
     books: [
@@ -2099,7 +2099,7 @@ const BookData = [
   },
   {
     id: 10,
-    category: "Self-Help",
+    category: "SelfHelp",
     image:
       "https://fourminutebooks.com/wp-content/uploads/2020/11/self-help-books-7.jpg",
     books: [

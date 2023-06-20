@@ -11,6 +11,17 @@ import BasketButton from "../Components/SmalComponents/BasketButton";
 import WishLListIcon from "../Components/SmalComponents/WishLListIcon";
 
 const NavigationBar = ({ darkModeHandler }) => {
+  const nameInLocaleStorage = localStorage.getItem("name");
+  const [nameFromLocalStorage, setNameFromLocalStorage] = useState("");
+
+  useEffect(() => {
+    if (nameInLocaleStorage) {
+      const name = nameInLocaleStorage;
+      console.log(name);
+      console.log(nameInLocaleStorage);
+    }
+  }, [nameInLocaleStorage]);
+
   const { cartItems, setCartItems } = useContext(CartContext);
   const [totalItemsInBaskets, setTotalItemsInBaskets] = useState(0);
 

@@ -1,9 +1,13 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+
+import { localize } from "../../Translation";
+import { CartContext } from "../../App";
 
 import HeartButton from "../SmalComponents/HeartButton";
 import BookInformation from "./BookInformation";
 
 const BookList = ({ books, handleAddToBasket }) => {
+  let { language } = useContext(CartContext);
   const [showInfoId, setShowInfoId] = useState(null);
   const [shoeInformationModal, setShoeInformationModal] = useState(false);
   let initialBasket = [];
@@ -33,15 +37,15 @@ const BookList = ({ books, handleAddToBasket }) => {
         </div>
         <div className="flex flex-col w-full text-xl font-serif pl-14  gap-2">
           <span>
-            <span className="font-bold"> By: </span>
+            <span className="font-bold">{localize(language, "By")}: </span>
             {el.author}
           </span>
           <span>
-            <span className="font-bold"> year: </span>
+            <span className="font-bold">{localize(language, "Year")}: </span>
             {el.year}
           </span>
           <span>
-            <span className="font-bold"> Price: </span>
+            <span className="font-bold">{localize(language, "Price")}: </span>
             {el.price} €
           </span>
           {/* <span>
@@ -88,9 +92,9 @@ const BookList = ({ books, handleAddToBasket }) => {
           />
           <button
             onClick={() => AddBooksToBasketHandler(el)}
-            className="text-yellow-50 py-2 px-10 rounded hover:bg-cyan-700 bg-cyan-900 flex justify-center items-center mb-5"
+            className="text-yellow-50 py-2 px-4 sm:h-12 sm:w-52 rounded hover:bg-cyan-700 bg-cyan-900 flex justify-center items-center mb-5"
           >
-            Add to Basket
+            {localize(language, "AddToBasket")}
           </button>
           <HeartButton></HeartButton>
         </div>

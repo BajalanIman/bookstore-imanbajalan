@@ -1,21 +1,22 @@
 import { useContext, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { localize } from "../Translation";
-
-// import HeartButton from "../Components/SmalComponents/HeartButton";
-// import ProductInformation from "./ProductInformation";
-import BookList from "../Components/SubCategories/BookList";
-import FilterBooksBTN from "../Components/SubCategories/FilterBooksBTN";
 import { CartContext } from "../App";
 
-const SORT_EXPENSIVE = "expensive";
-const SORT_CHEAP = "cheap";
-const SORT_OLD = "old";
-const SORT_NEW = "new";
+import BookList from "../Components/SubCategories/BookList";
+import FilterBooksBTN from "../Components/SubCategories/FilterBooksBTN";
 
 const SubCategories = () => {
+  let { language } = useContext(CartContext);
+
+  const SORT_EXPENSIVE = `${localize(language, "expensive")}`;
+  const SORT_CHEAP = `${localize(language, "cheap")}`;
+  const SORT_OLD = `${localize(language, "Old")}`;
+  const SORT_NEW = `${localize(language, "New")}`;
+
   const { cartItems, setCartItems } = useContext(CartContext);
   const [sortType, setSortType] = useState(SORT_NEW);
+
   // const [cheapSort, setCheapSort] = useState(true);
   // const [expensiveSort, setExpensiveSort] = useState(false);
   // const [oldSort, setOldSort] = useState(false);
@@ -64,7 +65,8 @@ const SubCategories = () => {
 
   const location = useLocation();
   const books = location.state.booklists || [];
-  let basket = { id: "", name: "", price: null };
+  // let basket = { id: "", name: "", price: null };
+
   const sortedBooks = books.sort(
     (a, b) =>
       (sortType === SORT_EXPENSIVE && (b.price > a.price ? 1 : -1)) ||
@@ -77,11 +79,11 @@ const SubCategories = () => {
     <div className="mb-1 text-sm font-light text-gray-500 dark:text-gray-400">
       {itemAddInfo && (
         <p className="absolute sm:ml-6 bg-green-600 text-white font-bold p-4 top-36 sm:top-24 border border-green-900 rounded-tr-lg rounded-br-xl">
-          The Book is added to the basket now!
+          {localize(language, "BookAddToBasket")}
         </p>
       )}
       <div className=" ml-6 w-full flex justify-center mt-14"></div>
-      <div className="flex justify-center items-center gap-8 mt-0">
+      <div className="flex justify-center items-center w-full absolute gap-8 mt-0">
         <FilterBooksBTN name={SORT_NEW} sortHandler={newSortHandler} />
         <FilterBooksBTN name={SORT_CHEAP} sortHandler={chepSortHandler} />
         <FilterBooksBTN
@@ -116,7 +118,7 @@ const SubCategories = () => {
         </button> */}
       </div>
       <div>
-        <div className=" container m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className=" container m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
           <BookList books={sortedBooks} handleAddToBasket={handleAddToBasket} />
         </div>
       </div>

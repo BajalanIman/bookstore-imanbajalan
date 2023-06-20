@@ -1,4 +1,10 @@
+import { useContext } from "react";
+import { localize } from "../../Translation";
+import { CartContext } from "../../App";
+
 const BookInformation = ({ setShoeInformationModal, moreDetail }) => {
+  let { language } = useContext(CartContext);
+
   const closeInfoModal = () => {
     setShoeInformationModal(false);
   };
@@ -23,16 +29,20 @@ const BookInformation = ({ setShoeInformationModal, moreDetail }) => {
                       <img src={moreDetail.image} alt={moreDetail.name} />
                     </div>
                     <p className="pt-2">
-                      <span className="font-bold">Name: </span>
+                      <span className="font-bold">
+                        {localize(language, "name")}:
+                      </span>
                       {moreDetail.name}
                     </p>
                     <p className="text-sm text-gray-500">
-                      <span className="font-bold">Information: </span>
+                      <span className="font-bold">
+                        {localize(language, "Information")}:
+                      </span>
                       {moreDetail.info}
                     </p>
                     <p>
-                      The ISBN of this book is :{moreDetail.ISBN}, and you can
-                      buy it in this bookshop!
+                      {localize(language, "ISBN")}
+                      {moreDetail.ISBN}, {localize(language, "BuyTheBook")}
                     </p>
                   </div>
                 </div>
@@ -44,7 +54,7 @@ const BookInformation = ({ setShoeInformationModal, moreDetail }) => {
                 type="button"
                 className="inline-flex w-full justify-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 sm:ml-3 sm:w-auto"
               >
-                close
+                {localize(language, "close")}
               </button>
             </div>
           </div>

@@ -4,18 +4,20 @@ import { useOutletContext } from "react-router-dom";
 
 import SubCategories from "./SubCategories";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect, useContext } from "react";
 
+import { CartContext } from "../App";
 import BookData from "../Components/Data/BookData";
+import { localize } from "../Translation";
 
 const Body = () => {
+  let { language } = useContext(CartContext);
+
   const [showSubCatagories, setShowSubCatagories] = useState(false);
   let booklists = "";
   //   const [booklists, setBooklists] = useState();
   let bookCategories = BookData;
   const Navigate = useNavigate();
-  // let booklists = "";
-  //  console.log(props);
 
   return (
     <div>
@@ -34,7 +36,7 @@ const Body = () => {
               className="sm:w-96 sm:h-96 flex flex-col justify-center items-center border shadow-lg rounded m-6 hover:scale-110 cursor-pointer dark:hover:bg-gray-500 "
             >
               <p className="text-black pb-7 text-2xl mt-6 font-bold font-serif dark:text-white ">
-                {e.category}
+                {localize(language, e.category)}
               </p>
               <img
                 className="h-72 border mb-8 rounded opacity-90"

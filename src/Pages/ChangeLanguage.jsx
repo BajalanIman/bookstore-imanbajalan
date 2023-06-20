@@ -1,27 +1,29 @@
-import { useState } from "react";
-// import "./App.css";
+import { useState, useContext } from "react";
 import { localize } from "../Translation";
-import LangIcon from "../Components/LangIcon";
-// import NavigationBar from "./Pages/NavigationBar";
 
-// import CreateAccount from "./Pages/CreateAccount";
-//import Login from "./Pages/Login";
+import LangIcon from "../Components/LangIcon";
+import { CartContext } from "../App";
 
 const ChangeLanguage = () => {
+  const { language, setLanguage } = useContext(CartContext);
+
   const [lang, setLang] = useState(() => "en");
   const englishLang = (e) => {
     setLang(e.target.className);
     setshowAllLanguage(false);
+    setLanguage(e.target.className);
   };
 
   const GermanLang = (e) => {
     setLang(e.target.className);
     setshowAllLanguage(false);
+    setLanguage(e.target.className);
   };
 
   const FrenchLang = (e) => {
     setLang(e.target.className);
     setshowAllLanguage(false);
+    setLanguage(e.target.className);
   };
   const [showAllLanguage, setshowAllLanguage] = useState(false);
 
@@ -31,10 +33,6 @@ const ChangeLanguage = () => {
 
   return (
     <div>
-      {/* <h1 className="">{localize(lang, "name")}</h1>
-			<h1>{localize(lang, "title")}</h1>
-			<h3>{localize(lang, "hello")}</h3>
-			<h3 className="flag">{localize(lang, "icon")}</h3> */}
       <div className="flex flex-col gap-2 w-32 justify-start items-start p-3 rounded hover:border text-white  hover:border-white cursor-pointer">
         <div
           className="flex text-2xl w-24 justify-center"

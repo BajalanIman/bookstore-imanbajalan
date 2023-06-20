@@ -1,5 +1,4 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 import { useState, createContext, useEffect } from "react";
 
 import Body from "./Pages/Body";
@@ -11,6 +10,7 @@ import Login from "./Pages/Login";
 import Purchase from "./Pages/Purchase";
 
 export const CartContext = createContext({ 123: 1 });
+// export const LanguageContext = createContext("");
 
 const router = createBrowserRouter([
   {
@@ -39,6 +39,7 @@ const router = createBrowserRouter([
 function App() {
   const [cartItems, setCartItems] = useState([]);
   const [totalPrice, setTotalPrice] = useState();
+  const [language, setLanguage] = useState("");
 
   useEffect(() => {
     let total = 0;
@@ -48,9 +49,21 @@ function App() {
     setTotalPrice(total);
   }, [cartItems]);
 
+  useEffect(() => {
+    setLanguage(language);
+  }, [language]);
+
   return (
     <>
-      <CartContext.Provider value={{ cartItems, totalPrice, setCartItems }}>
+      <CartContext.Provider
+        value={{
+          cartItems,
+          setCartItems,
+          totalPrice,
+          language,
+          setLanguage,
+        }}
+      >
         <div className="flex flex-col dark:text-white text-xl w-full h-screen">
           <RouterProvider router={router} />
         </div>

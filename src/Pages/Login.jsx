@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Username from "../Components/LoginComponents/Username";
 import PasswordIcon, {
   ShowPasswordIcon,
@@ -7,10 +7,11 @@ import PasswordIcon, {
 } from "../Components/LoginComponents/PasswordIcon";
 
 const Login = () => {
+  const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
-  const [usernameSubmit, setUsernameSubmit] = useState("");
-  const [passwordSubmit, setPasswordSubmit] = useState("");
+  const [usernameSubmit, setUsernameSubmit] = useState();
+  const [passwordSubmit, setPasswordSubmit] = useState();
 
   const setPassword = () => {
     setShowPassword(!showPassword);
@@ -20,39 +21,28 @@ const Login = () => {
     setUsernameSubmit(event.target.value);
   };
 
-  let Password = "";
-  // let setFamilySubmit = "";
-  // let setEmailSubmit = "";
-  // let setPasswordSubmit = "";
-  var lowerCase = /[a-z]/g;
-  var upperCase = /[A-Z]/g;
-  var numbers = /[0-9]/g;
-
   const passwordSubmitHandler = (event) => {
     setPasswordSubmit(event.target.value);
   };
 
   function sumitLoginForm(e) {
     e.preventDefault();
-
-    if (!setUsernameSubmit("admin")) {
-      setUsernameSubmit("");
+    if (usernameSubmit !== "admin") {
       setErrorMessage("Username is not correct!");
       setTimeout(() => {
         setErrorMessage();
-      }, 5000);
-    } else if (setPasswordSubmit.length < 8) {
-      setErrorMessage("Password should be more than 8 character!");
-    } else if (
-      !setPasswordSubmit.match(lowerCase) ||
-      !setPasswordSubmit.match(upperCase) ||
-      !setPasswordSubmit.match(numbers)
-    ) {
-      setErrorMessage(
-        "Password should be including number, lowercase and uppercase letters!"
-      );
+      }, 3000);
+    } else if (passwordSubmit !== "123456") {
+      setErrorMessage("Password is not correct!");
+      setTimeout(() => {
+        setErrorMessage();
+      }, 3000);
     } else {
+      localStorage.setItem("name", "admin");
+      localStorage.setItem("Password", "123456");
+      setUsernameSubmit("");
       setPasswordSubmit("");
+      navigate("/");
     }
   }
 
