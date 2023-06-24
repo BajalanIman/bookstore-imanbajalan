@@ -111,9 +111,7 @@ const NavigationBar = ({ darkModeHandler }) => {
           placeholder="Search..."
           className=" w-72 sm:w-96 h-11 mb-5 mt-4 rounded pl-4 hover:bg-yellow-50 bg-red-50 ml-2 text-sm"
         />
-        {/* <div className="ml-[-30px]">
-          <SearchButton />
-        </div> */}
+
         <div className="ml-2 flex flex-col items-center">
           <div className="relative">
             <p className=" text-yellow-50 font-bold text-xs  absolute sm:top-1 left-[-4px]">

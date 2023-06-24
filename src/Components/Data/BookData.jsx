@@ -742,7 +742,8 @@ const BookData = [
         ISBN: "9780141439518",
         year: 1813,
         author: "Jane Austen",
-        image: "https://example.com/pride-and-prejudice.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71Q1tPupKjL._AC_UF894,1000_QL80_.jpg",
         description:
           "A classic novel about the complicated relationship between Elizabeth Bennet and Mr. Darcy.",
       },
@@ -753,7 +754,8 @@ const BookData = [
         ISBN: "9780385302302",
         year: 1991,
         author: "Diana Gabaldon",
-        image: "https://example.com/outlander.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71pjU7wfZFL._AC_UF894,1000_QL80_.jpg",
         description:
           "A time-travel romance following the story of Claire Randall, a World War II nurse who finds herself transported to 18th-century Scotland.",
       },
@@ -764,7 +766,8 @@ const BookData = [
         ISBN: "9780670026609",
         year: 2012,
         author: "Jojo Moyes",
-        image: "https://example.com/me-before-you.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71+YK9HSaJL._AC_UF894,1000_QL80_.jpg",
         description:
           "A heartwarming story about the relationship between a young woman named Louisa Clark and a quadriplegic man named Will Traynor.",
       },
@@ -775,7 +778,8 @@ const BookData = [
         ISBN: "9780446605236",
         year: 1996,
         author: "Nicholas Sparks",
-        image: "https://example.com/the-notebook.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/51BUuLUf0zL._AC_UF894,1000_QL80_.jpg",
         description:
           "A poignant tale of love and loss, chronicling the enduring bond between Noah Calhoun and Allie Nelson.",
       },
@@ -786,7 +790,8 @@ const BookData = [
         ISBN: "9780141441146",
         year: 1847,
         author: "Charlotte Brontë",
-        image: "https://example.com/jane-eyre.jpg",
+        image:
+          "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781471134784/jane-eyre-9781471134784_hr.jpg",
         description:
           "A gothic romance novel depicting the life of Jane Eyre, a young governess who falls in love with the brooding Mr. Rochester.",
       },
@@ -797,7 +802,7 @@ const BookData = [
         ISBN: "9781451635621",
         year: 1936,
         author: "Margaret Mitchell",
-        image: "https://example.com/gone-with-the-wind.jpg",
+        image: "https://pictures.abebooks.com/isbn/9780330323499-de.jpg",
         description:
           "A sweeping epic set during the American Civil War, focusing on the tumultuous love affair between Scarlett O'Hara and Rhett Butler.",
       },
@@ -808,7 +813,8 @@ const BookData = [
         ISBN: "9780525478812",
         year: 2012,
         author: "John Green",
-        image: "https://example.com/the-fault-in-our-stars.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/817tHNcyAgL._AC_UF894,1000_QL80_.jpg",
         description:
           "A heart-wrenching story of Hazel Grace Lancaster and Augustus Waters, two teenagers who meet and fall in love at a cancer support group.",
       },
@@ -819,7 +825,8 @@ const BookData = [
         ISBN: "9780062439598",
         year: 2016,
         author: "Sally Thorne",
-        image: "https://example.com/the-hating-game.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71Yp-JHLwrL._AC_UF894,1000_QL80_.jpg",
         description:
           "A enemies-to-lovers workplace romance featuring Lucy Hutton and Joshua Templeman, two co-workers engaged in a fierce rivalry.",
       },
@@ -830,7 +837,8 @@ const BookData = [
         ISBN: "9781476729091",
         year: 2013,
         author: "Graeme Simsion",
-        image: "https://example.com/the-rosie-project.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/51WxiBn2GUL._AC_UF894,1000_QL80_.jpg",
         description:
           "A quirky and heartwarming story of Don Tillman, a socially challenged genetics professor, and his quest for love.",
       },
@@ -841,7 +849,8 @@ const BookData = [
         ISBN: "9781476764832",
         year: 2003,
         author: "Audrey Niffenegger",
-        image: "https://example.com/the-time-travelers-wife.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71ogENmXEYL._AC_UF894,1000_QL80_.jpg",
         description:
           "A unique love story between Henry DeTamble, a man with a genetic disorder that causes him to time travel, and Clare Abshire, his wife.",
       },
@@ -852,7 +861,8 @@ const BookData = [
         ISBN: "9780446364492",
         year: 1992,
         author: "Robert James Waller",
-        image: "https://example.com/the-bridges-of-madison-county.jpg",
+        image:
+          "https://target.scene7.com/is/image/Target/GUEST_79f70087-c84a-4480-ba26-a4f34c977b07?wid=488&hei=488&fmt=pjpeg",
         description:
           "A bittersweet romance set in 1960s Iowa, exploring the passionate affair between Francesca Johnson and Robert Kincaid.",
       },
@@ -863,7 +873,8 @@ const BookData = [
         ISBN: "9781250012579",
         year: 2013,
         author: "Rainbow Rowell",
-        image: "https://example.com/eleanor-and-park.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/41zSPIXZBPL._AC_UF894,1000_QL80_.jpg",
         description:
           "A young adult novel about the love story between two misfit teenagers, Eleanor and Park, set in the 1980s.",
       },
@@ -874,7 +885,8 @@ const BookData = [
         ISBN: "9780061990477",
         year: 1977,
         author: "Colleen McCullough",
-        image: "https://example.com/the-thorn-birds.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/91ZexYP+QJL._AC_UF894,1000_QL80_.jpg",
         description:
           "An epic saga spanning generations, centered around the forbidden love between Meggie Cleary and Father Ralph de Bricassart.",
       },
@@ -885,7 +897,8 @@ const BookData = [
         ISBN: "9781501110368",
         year: 2016,
         author: "Colleen Hoover",
-        image: "https://example.com/it-ends-with-us.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71TxTmt30bL._AC_UF894,1000_QL80_.jpg",
         description:
           "A powerful contemporary romance tackling complex issues of love, loyalty, and personal growth, written by Colleen Hoover.",
       },
@@ -896,7 +909,8 @@ const BookData = [
         ISBN: "9781476767314",
         year: 2014,
         author: "Graeme Simsion",
-        image: "https://example.com/the-rosie-effect.jpg",
+        image:
+          "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1437370114i/23492671.jpg",
         description:
           'The sequel to "The Rosie Project," continuing the story of Don Tillman and Rosie Jarman as they navigate the challenges of married life.',
       },
@@ -907,7 +921,8 @@ const BookData = [
         ISBN: "9780399587665",
         year: 2018,
         author: "Jasmine Guillory",
-        image: "https://example.com/the-wedding-date.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/91jR8epDEyL._AC_UF1000,1000_QL80_.jpg",
         description:
           "A contemporary romance featuring Alexa Monroe and Drew Nichols, who pretend to be a couple for a weekend wedding.",
       },
@@ -918,7 +933,7 @@ const BookData = [
         ISBN: "9780446547659",
         year: 2011,
         author: "Nicholas Sparks",
-        image: "https://example.com/the-best-of-me.jpg",
+        image: "https://bilder.buecher.de/produkte/35/35245/35245554z.jpg",
         description:
           "A touching story of high school sweethearts Amanda Collier and Dawson Cole, who reunite after many years apart.",
       },
@@ -929,7 +944,8 @@ const BookData = [
         ISBN: "9781401322786",
         year: 2012,
         author: "Mitch Albom",
-        image: "https://example.com/the-time-keeper.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/51GjavfCgXL._AC_UF1000,1000_QL80_.jpg",
         description:
           "A thought-provoking novel exploring the concept of time and its impact on our lives, through the story of Dor, the first man to count the hours.",
       },
@@ -940,7 +956,8 @@ const BookData = [
         ISBN: "9780061854149",
         year: 2009,
         author: "Paullina Simons",
-        image: "https://example.com/the-bronze-horseman.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71yySdvuwdL._AC_UF894,1000_QL80_.jpg",
         description:
           "Set in World War II Russia, this historical romance follows the love affair between Tatiana Metanova and Alexander Barrington.",
       },
@@ -951,7 +968,8 @@ const BookData = [
         ISBN: "9780143121107",
         year: 2011,
         author: "Jojo Moyes",
-        image: "https://example.com/the-last-letter-from-your-lover.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/41-9IkLe3xL._AC_UF894,1000_QL80_.jpg",
         description:
           "A captivating story of love and missed connections, spanning two time periods and centered around a lost love letter.",
       },
@@ -969,7 +987,8 @@ const BookData = [
         ISBN: "9780441172719",
         year: 1965,
         author: "Frank Herbert",
-        image: "https://example.com/dune.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71ZhdsPt3cL._AC_UF894,1000_QL80_.jpg",
         description:
           "A science fiction epic set in a distant future where interstellar travel, political intrigue, and ecological challenges shape the destiny of humanity.",
       },
@@ -980,7 +999,8 @@ const BookData = [
         ISBN: "9780441569595",
         year: 1984,
         author: "William Gibson",
-        image: "https://example.com/neuromancer.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/81N1TtCPxOL._AC_UF894,1000_QL80_.jpg",
         description:
           'Considered a seminal work in cyberpunk literature, "Neuromancer" follows a washed-up computer hacker on a mission to pull off the ultimate digital heist.',
       },
@@ -991,7 +1011,8 @@ const BookData = [
         ISBN: "9780553293357",
         year: 1951,
         author: "Isaac Asimov",
-        image: "https://example.com/foundation.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/911ow7wZMKL._AC_UF894,1000_QL80_.jpg",
         description:
           'The first book in the iconic "Foundation" series, it explores the fall of a galactic empire and the efforts to preserve humanity\'s knowledge and civilization.',
       },
@@ -1002,7 +1023,8 @@ const BookData = [
         ISBN: "9780553380958",
         year: 1992,
         author: "Neal Stephenson",
-        image: "https://example.com/snow-crash.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/91NrsGzBjUL._AC_UF894,1000_QL80_.jpg",
         description:
           "A cyberpunk novel that takes place in a dystopian future where a hacker named Hiro Protagonist uncovers a conspiracy involving a virtual reality drug.",
       },
@@ -1013,7 +1035,7 @@ const BookData = [
         ISBN: "9780812550702",
         year: 1985,
         author: "Orson Scott Card",
-        image: "https://example.com/enders-game.jpg",
+        image: "https://m.media-amazon.com/images/I/51YfSAtW63L.jpg",
         description:
           'A military science fiction novel following the story of Andrew "Ender" Wiggin, a child prodigy who is trained to lead Earth\'s forces against an alien species.',
       },
@@ -1024,7 +1046,8 @@ const BookData = [
         ISBN: "9780060850524",
         year: 1932,
         author: "Aldous Huxley",
-        image: "https://example.com/brave-new-world.jpg",
+        image:
+          "https://upload.wikimedia.org/wikipedia/en/6/62/BraveNewWorld_FirstEdition.jpg",
         description:
           "A dystopian novel that depicts a society where scientific advancements have created a rigidly controlled world with extreme social stratification.",
       },
@@ -1035,7 +1058,8 @@ const BookData = [
         ISBN: "9780553283686",
         year: 1989,
         author: "Dan Simmons",
-        image: "https://example.com/hyperion.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/91cI7fKu0vL._AC_UF894,1000_QL80_.jpg",
         description:
           "A science fiction masterpiece that weaves together the stories of seven pilgrims on a far-future world, each with a unique tale to tell.",
       },
@@ -1046,7 +1070,7 @@ const BookData = [
         ISBN: "9780345391803",
         year: 1979,
         author: "Douglas Adams",
-        image: "https://example.com/hitchhikers-guide.jpg",
+        image: "https://m.media-amazon.com/images/I/51vfuNNWMTS.jpg",
         description:
           "A comedic science fiction series following the misadventures of an ordinary human, Arthur Dent, as he travels the universe after Earth's destruction.",
       },
@@ -1057,7 +1081,8 @@ const BookData = [
         ISBN: "9780451524935",
         year: 1949,
         author: "George Orwell",
-        image: "https://example.com/1984.jpg",
+        image:
+          "https://kbimages1-a.akamaihd.net/c9472126-7f96-402d-ba57-5ba4c0f4b238/353/569/90/False/nineteen-eighty-four-1984-george.jpg",
         description:
           "A dystopian novel set in a totalitarian society, exploring themes of government surveillance, propaganda, and the loss of individual freedom.",
       },
@@ -1068,7 +1093,8 @@ const BookData = [
         ISBN: "9780441478125",
         year: 1969,
         author: "Ursula K. Le Guin",
-        image: "https://example.com/left-hand-of-darkness.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/81EtwGcbbpL._AC_UF894,1000_QL80_.jpg",
         description:
           "A groundbreaking work of science fiction that explores themes of gender and sexuality in a world where the inhabitants have no fixed gender.",
       },
@@ -1079,7 +1105,8 @@ const BookData = [
         ISBN: "9780486295060",
         year: 1898,
         author: "H.G. Wells",
-        image: "https://example.com/war-of-the-worlds.jpg",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBmGkrAEmcs6d5fr5gXLCrQEOrcW5eDoh91vW9HzjSaX6cjZqjbUJ8xL65veyNwhkhteI&usqp=CAU",
         description:
           "One of the earliest and most influential science fiction novels, it tells the story of a Martian invasion of Earth and its devastating consequences.",
       },
@@ -1090,7 +1117,7 @@ const BookData = [
         ISBN: "9780553380958",
         year: 1992,
         author: "Neal Stephenson",
-        image: "https://example.com/snow-crash.jpg",
+        image: "https://pictures.abebooks.com/isbn/9780553562613-de.jpg",
         description:
           "A cyberpunk novel that takes place in a dystopian future where a hacker named Hiro Protagonist uncovers a conspiracy involving a virtual reality drug.",
       },
@@ -1101,7 +1128,8 @@ const BookData = [
         ISBN: "9780553418028",
         year: 2011,
         author: "Andy Weir",
-        image: "https://example.com/the-martian.jpg",
+        image:
+          "https://kbimages1-a.akamaihd.net/07e6e6ff-c92f-413a-aaad-a9a00a671c92/1200/1200/False/the-martian-21.jpg",
         description:
           "A gripping tale of survival on Mars, as astronaut Mark Watney must rely on his ingenuity to stay alive and find a way back home.",
       },
@@ -1112,7 +1140,7 @@ const BookData = [
         ISBN: "9780385490818",
         year: 1985,
         author: "Margaret Atwood",
-        image: "https://example.com/the-handmaids-tale.jpg",
+        image: "https://pictures.abebooks.com/isbn/9781784873189-de.jpg",
         description:
           "A dystopian novel set in a patriarchal society where fertile women, known as handmaids, are forced into reproductive servitude.",
       },
@@ -1123,7 +1151,8 @@ const BookData = [
         ISBN: "9780486284729",
         year: 1895,
         author: "H.G. Wells",
-        image: "https://example.com/the-time-machine.jpg",
+        image:
+          "https://kbimages1-a.akamaihd.net/8a786e4d-2184-494d-a5f1-034fcb9d9910/1200/1200/False/the-time-machine-200.jpg",
         description:
           "A classic science fiction novel that follows the adventures of a time traveler who journeys far into the future and witnesses the evolution of humanity.",
       },
@@ -1134,7 +1163,8 @@ const BookData = [
         ISBN: "9780307887443",
         year: 2011,
         author: "Ernest Cline",
-        image: "https://example.com/ready-player-one.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71R4I+eogrL._AC_UF894,1000_QL80_.jpg",
         description:
           "A virtual reality adventure set in a dystopian future where people escape the real world by entering a massive online simulation called the OASIS.",
       },
@@ -1145,7 +1175,8 @@ const BookData = [
         ISBN: "9781451673319",
         year: 1953,
         author: "Ray Bradbury",
-        image: "https://example.com/fahrenheit-451.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/41gIrr4WtQL._AC_UF894,1000_QL80_.jpg",
         description:
           "A dystopian novel set in a future society where books are banned and burned, and one man rebels against the suppression of knowledge.",
       },
@@ -1156,7 +1187,8 @@ const BookData = [
         ISBN: "9780345370778",
         year: 1990,
         author: "Michael Crichton",
-        image: "https://example.com/jurassic-park.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/81rBVCDfrgL._AC_UF894,1000_QL80_.jpg",
         description:
           "A thrilling science fiction novel about a theme park filled with genetically engineered dinosaurs that escape and wreak havoc on the island.",
       },
@@ -1167,7 +1199,8 @@ const BookData = [
         ISBN: "9780439023528",
         year: 2008,
         author: "Suzanne Collins",
-        image: "https://example.com/the-hunger-games.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/61i8nC90deL._AC_UF894,1000_QL80_.jpg",
         description:
           "The first book in a popular dystopian trilogy, it follows a young girl named Katniss Everdeen as she participates in a deadly televised competition.",
       },
@@ -1178,7 +1211,8 @@ const BookData = [
         ISBN: "9780486281384",
         year: 1897,
         author: "H.G. Wells",
-        image: "https://example.com/the-invisible-man.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/61gSWGJq9QL._AC_UF894,1000_QL80_.jpg",
         description:
           "A science fiction novel about a scientist who discovers the secret of invisibility but struggles to control his newfound power.",
       },
@@ -1196,7 +1230,8 @@ const BookData = [
         ISBN: "9780747532699",
         year: 1997,
         author: "J.K. Rowling",
-        image: "https://example.com/harry-potter-1.jpg",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq3qvr3EfyCa06WwvCUJAhN8OVP35ooCeu63DxbfKHA8Hp_T--yChsQGbR4M6R01Ey-dM&usqp=CAU",
         description:
           "The first book in the popular Harry Potter series it introduces the young wizard Harry Potter and his journey at Hogwarts School of Witchcraft and Wizardry.",
       },
@@ -1207,7 +1242,8 @@ const BookData = [
         ISBN: "9780544003415",
         year: 1954,
         author: "J.R.R. Tolkien",
-        image: "https://example.com/lord-of-the-rings.jpg",
+        image:
+          "https://kbimages1-a.akamaihd.net/7a557cb3-f72a-47c3-992b-951c9566e4d4/1200/1200/False/the-fellowship-of-the-ring-the-lord-of-the-rings-book-1-1.jpg",
         description:
           "A epic high fantasy trilogy that follows the quest of Frodo Baggins to destroy the One Ring and save Middle-earth from the dark lord Sauron.",
       },
@@ -1218,7 +1254,8 @@ const BookData = [
         ISBN: "9780553573404",
         year: 1996,
         author: "George R.R. Martin",
-        image: "https://example.com/game-of-thrones.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/91hPXkwnaeL._AC_UF894,1000_QL80_.jpg",
         description:
           "The first book in the A Song of Ice and Fire series, it depicts the power struggles among noble families in the fictional continent of Westeros.",
       },
@@ -1229,7 +1266,8 @@ const BookData = [
         ISBN: "9780066238500",
         year: 1950,
         author: "C.S. Lewis",
-        image: "https://example.com/chronicles-of-narnia.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71uBLNzt4KL._AC_UF894,1000_QL80_.jpg",
         description:
           "A series of seven fantasy novels set in the fictional world of Narnia, where various adventures and battles between good and evil take place.",
       },
@@ -1240,7 +1278,8 @@ const BookData = [
         ISBN: "9780345339683",
         year: 1937,
         author: "J.R.R. Tolkien",
-        image: "https://example.com/the-hobbit.jpg",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpc6PKpLMBvTBXFwhNjWL_oxAl1ltlemoQhyqWV1q1pQHrdBrX6eZldp9VRVnUBpS08wc&usqp=CAU",
         description:
           "A prequel to The Lord of the Rings, it follows the adventures of Bilbo Baggins as he accompanies a group of dwarves on a quest to reclaim their homeland.",
       },
@@ -1251,7 +1290,8 @@ const BookData = [
         ISBN: "9780375826696",
         year: 2002,
         author: "Christopher Paolini",
-        image: "https://example.com/eragon.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/91qZ+dBC+FL._AC_UF1000,1000_QL80_.jpg",
         description:
           "The first book in the Inheritance Cycle series, it tells the story of a young farm boy named Eragon who becomes a dragon rider and battles against an evil king.",
       },
@@ -1262,7 +1302,8 @@ const BookData = [
         ISBN: "9780756404741",
         year: 2007,
         author: "Patrick Rothfuss",
-        image: "https://example.com/the-name-of-the-wind.jpg",
+        image:
+          "https://images2.medimops.eu/product/586a85/M02352943558-source.jpg",
         description:
           "The first book in The Kingkiller Chronicle series, it follows the life of Kvothe, a magically gifted young man, as he seeks vengeance and uncovers secrets.",
       },
@@ -1273,7 +1314,8 @@ const BookData = [
         ISBN: "9780060558123",
         year: 2001,
         author: "Neil Gaiman",
-        image: "https://example.com/american-gods.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/51Pb-OAREFL._AC_UF894,1000_QL80_.jpg",
         description:
           "A contemporary fantasy novel that explores the clash between the old gods of mythology and the new gods of modern society.",
       },
@@ -1284,7 +1326,8 @@ const BookData = [
         ISBN: "9780765311788",
         year: 2006,
         author: "Brandon Sanderson",
-        image: "https://example.com/mistborn.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/811qBmIYTFL._AC_UF894,1000_QL80_.jpg",
         description:
           "The first book in the Mistborn trilogy, it is set in a world where the tyrannical Lord Ruler dominates the land and follows a group of rebels with magical abilities.",
       },
@@ -1295,7 +1338,8 @@ const BookData = [
         ISBN: "9780765356159",
         year: 2004,
         author: "Susanna Clarke",
-        image: "https://example.com/jonathan-strange-and-mr-norrell.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71Lylsj5SiL._AC_UF894,1000_QL80_.jpg",
         description:
           "A historical fantasy novel set in 19th-century England, it portrays an alternative history where magic once existed and two magicians emerge to restore it.",
       },
@@ -1306,7 +1350,8 @@ const BookData = [
         ISBN: "9780553588941",
         year: 2006,
         author: "Scott Lynch",
-        image: "https://example.com/the-lies-of-locke-lamora.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/91pbvnDj5FL._AC_UF894,1000_QL80_.jpg",
         description:
           "The first book in the Gentleman Bastard series, it follows the adventures of a skilled thief and con artist named Locke Lamora in a city of political intrigue.",
       },
@@ -1317,7 +1362,8 @@ const BookData = [
         ISBN: "9780670020553",
         year: 2009,
         author: "Lev Grossman",
-        image: "https://example.com/the-magicians.jpg",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqVm-q7ljY0CS4hsrJ22tboqXhcn3fN0mSLIb-uYIY8Mo3nB6_tV2EF8YKSe02JcjM5pQ&usqp=CAU",
         description:
           "A contemporary fantasy novel that follows a young man named Quentin Coldwater as he attends a secret college of magic and discovers a darker side to the magical world.",
       },
@@ -1328,7 +1374,8 @@ const BookData = [
         ISBN: "9780575079793",
         year: 2006,
         author: "Joe Abercrombie",
-        image: "https://example.com/the-blade-itself.jpg",
+        image:
+          "https://images.thalia.media/-/BF2000-2000/da47108ab3c444dda7bfb46a65d1e95c/the-blade-itself-gebundene-ausgabe-joe-abercrombie-englisch.jpeg",
         description:
           "The first book in The First Law trilogy, it is a dark fantasy novel that follows the lives of several morally ambiguous characters caught up in a world of power struggles.",
       },
@@ -1338,8 +1385,8 @@ const BookData = [
         price: 8.99,
         ISBN: "9780060853983",
         year: 1990,
-        author: "Terry Pratchett, Neil Gaiman",
-        image: "https://example.com/good-omens.jpg",
+        author: "Neil Gaiman, Terry Pratchett",
+        image: "https://m.media-amazon.com/images/I/51kgNU+LDsL.jpg",
         description:
           "A comedic fantasy novel about an angel and a demon who team up to prevent the apocalypse and protect the young Antichrist.",
       },
@@ -1350,7 +1397,8 @@ const BookData = [
         ISBN: "9780307744432",
         year: 2011,
         author: "Erin Morgenstern",
-        image: "https://example.com/the-night-circus.jpg",
+        image:
+          "https://images.thalia.media/-/BF2000-2000/caeec35c3626431e9f0c5d259a2ce0b3/the-night-circus-taschenbuch-erin-morgenstern-englisch.jpeg",
         description:
           "A fantastical novel set in a magical circus that only appears at night, it follows the lives of two young magicians pitted against each other in a competition.",
       },
@@ -1361,7 +1409,8 @@ const BookData = [
         ISBN: "9780765365274",
         year: 2010,
         author: "Brandon Sanderson",
-        image: "https://example.com/the-way-of-kings.jpg",
+        image:
+          "https://upload.wikimedia.org/wikipedia/en/8/8b/TheWayOfKings.png",
         description:
           "The first book in The Stormlight Archive series, it is set in a world of immense storms and follows various characters as they navigate political and magical conflicts.",
       },
@@ -1372,7 +1421,7 @@ const BookData = [
         ISBN: "9780316229296",
         year: 2015,
         author: "N.K. Jemisin",
-        image: "https://example.com/the-fifth-season.jpg",
+        image: "https://m.media-amazon.com/images/I/51X8daq87ZS.jpg",
         description:
           "The first book in The Broken Earth trilogy, it is set in a world plagued by catastrophic seismic events and follows a woman with incredible powers as she seeks revenge.",
       },
@@ -1383,7 +1432,8 @@ const BookData = [
         ISBN: "9780380804559",
         year: 1999,
         author: "Neil Gaiman",
-        image: "https://example.com/stardust.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/A1awDYOQNFL._AC_UF894,1000_QL80_.jpg",
         description:
           "A whimsical fantasy novel that tells the story of a young man named Tristran Thorn who ventures into the magical realm of Faerie to capture a fallen star.",
       },
@@ -1394,7 +1444,8 @@ const BookData = [
         ISBN: "9780812511819",
         year: 1990,
         author: "Robert Jordan",
-        image: "https://example.com/the-eye-of-the-world.jpg",
+        image:
+          "https://images.thalia.media/-/BF2000-2000/48609ae80f434f4ba2238b9a9d168b41/the-eye-of-the-world-book-one-of-the-wheel-of-time-taschenbuch-robert-jordan-englisch.jpeg",
         description:
           "The first book in The Wheel of Time series, it follows a group of young people who are drawn into a battle against the forces of darkness threatening their world.",
       },
@@ -1405,7 +1456,8 @@ const BookData = [
         ISBN: "9780804179034",
         year: 2015,
         author: "Naomi Novik",
-        image: "https://example.com/uprooted.jpg",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPcB6U6adgzmi82oWGc_IgbHbpuAf60QuVakTPdNvwSEwLFeaucLFKqsu2Vn3tvSPKvo8&usqp=CAU",
         description:
           "A standalone fantasy novel inspired by Polish folklore, it follows a young woman named Agnieszka who becomes entangled in a dangerous magical forest and must uncover its secrets.",
       },
@@ -1425,7 +1477,8 @@ const BookData = [
         ISBN: "9780375842207",
         year: 2005,
         author: "Markus Zusak",
-        image: "https://example.com/the-book-thief.jpg",
+        image:
+          "https://m.media-amazon.com/images/M/MV5BYmI4ODg4ZjktMDAwZS00Y2MwLWFhNDEtYjlkZTYwNmUwYjk4XkEyXkFqcGdeQXVyMTQyMTMwOTk0._V1_.jpg",
         description:
           "Set in Nazi Germany, this book follows the story of Liesel Meminger, a young girl who finds solace in stealing books and sharing them with others during the horrors of World War II.",
       },
@@ -1436,7 +1489,8 @@ const BookData = [
         ISBN: "9781501173219",
         year: 2014,
         author: "Anthony Doerr",
-        image: "https://example.com/all-the-light-we-cannot-see.jpg",
+        image:
+          "https://images.thalia.media/-/BF2000-2000/cc94507d54134ce6985a375d20aeb956/all-the-light-we-cannot-see-taschenbuch-anthony-doerr-englisch.jpeg",
         description:
           "Set during World War II, this Pulitzer Prize-winning novel tells the parallel stories of a blind French girl and a German boy whose paths eventually converge.",
       },
@@ -1447,7 +1501,8 @@ const BookData = [
         ISBN: "9780451225245",
         year: 1989,
         author: "Ken Follett",
-        image: "https://example.com/the-pillars-of-the-earth.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71+Lfa1AwBL._AC_UF894,1000_QL80_.jpg",
         description:
           "Set in 12th-century England, this epic tale follows the construction of a cathedral and the intertwined lives of the characters involved in its creation.",
       },
@@ -1458,7 +1513,8 @@ const BookData = [
         ISBN: "9780007230204",
         year: 2009,
         author: "Hilary Mantel",
-        image: "https://example.com/wolf-hall.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/715MYJy6kjL._AC_UF894,1000_QL80_.jpg",
         description:
           "The first book in the Thomas Cromwell Trilogy, it provides a fictionalized account of the rise to power of Thomas Cromwell in the court of Henry VIII.",
       },
@@ -1469,7 +1525,8 @@ const BookData = [
         ISBN: "9781594480003",
         year: 2003,
         author: "Khaled Hosseini",
-        image: "https://example.com/the-kite-runner.jpg",
+        image:
+          "https://images-eu.ssl-images-amazon.com/images/I/91Qer84lsGL._AC_UL600_SR600,600_.jpg",
         description:
           "Set in Afghanistan, this novel follows the story of Amir, a young boy from Kabul, and his journey of redemption against the backdrop of the country's tumultuous history.",
       },
@@ -1480,7 +1537,8 @@ const BookData = [
         ISBN: "9781451635621",
         year: 1936,
         author: "Margaret Mitchell",
-        image: "https://example.com/gone-with-the-wind.jpg",
+        image:
+          "https://cdn.waterstones.com/bookjackets/large/9781/5290/9781529091410.jpg",
         description:
           "Set in the American South during the Civil War and Reconstruction era, this classic novel tells the story of Scarlett O'Hara and her struggle to survive and rebuild her life.",
       },
@@ -1491,7 +1549,8 @@ const BookData = [
         ISBN: "9780399155345",
         year: 2009,
         author: "Kathryn Stockett",
-        image: "https://example.com/the-help.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/81hQtSOTCFL._AC_UF894,1000_QL80_.jpg",
         description:
           "Set in 1960s Mississippi, this novel explores the lives of African American maids and their relationship with their white employers, highlighting themes of racial inequality and friendship.",
       },
@@ -1502,7 +1561,8 @@ const BookData = [
         ISBN: "9780062797155",
         year: 2018,
         author: "Heather Morris",
-        image: "https://example.com/the-tattooist-of-auschwitz.jpg",
+        image:
+          "https://static01.nyt.com/images/2018/11/14/books/14TATTOOIST-bookcover/merlin_146148990_870ec687-c69b-4dd1-a52b-7960baf246f6-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
         description:
           "Based on a true story, this book follows the experiences of Lale Sokolov, a Slovakian Jew, who becomes the tattooist at the Auschwitz concentration camp during World War II.",
       },
@@ -1513,7 +1573,8 @@ const BookData = [
         ISBN: "9780385542364",
         year: 2016,
         author: "Colson Whitehead",
-        image: "https://example.com/the-underground-railroad.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/A1shEWB4a3L._AC_UF894,1000_QL80_.jpg",
         description:
           "This Pulitzer Prize-winning novel reimagines the historical Underground Railroad as an actual underground network of trains, following the journey of a young enslaved woman named Cora.",
       },
@@ -1524,7 +1585,8 @@ const BookData = [
         ISBN: "9780062654199",
         year: 2017,
         author: "Kate Quinn",
-        image: "https://example.com/the-alice-network.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/81Lu0-tgdVL._AC_UF894,1000_QL80_.jpg",
         description:
           "Set during World War I and World War II, this novel intertwines the stories of two women: Eve, a spy for the Alice Network in World War I, and Charlie, a pregnant American socialite searching for her cousin in post-World War II France.",
       },
@@ -1535,7 +1597,8 @@ const BookData = [
         ISBN: "9780743227445",
         year: 2001,
         author: "Philippa Gregory",
-        image: "https://example.com/the-other-boleyn-girl.jpg",
+        image:
+          "https://i0.wp.com/travellingbooknerd.com/wp-content/uploads/2021/01/the-other-boleyn-girl-min.jpg?resize=257%2C389&ssl=1",
         description:
           "Set in Tudor England, this historical novel follows the lives of Mary and Anne Boleyn, sisters who become rivals for the affections of King Henry VIII.",
       },
@@ -1546,7 +1609,8 @@ const BookData = [
         ISBN: "9780679781585",
         year: 1997,
         author: "Arthur Golden",
-        image: "https://example.com/memoirs-of-a-geisha.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71UgHbDujcL._AC_UF894,1000_QL80_.jpg",
         description:
           "This book tells the fictional story of a geisha named Sayuri, her journey from a poor fishing village to becoming one of the most celebrated geishas in Kyoto, Japan, and her experiences during World War II.",
       },
@@ -1558,7 +1622,7 @@ const BookData = [
         year: 2008,
         author: "Mary Ann Shaffer and Annie Barrows",
         image:
-          "https://example.com/the-guernsey-literary-and-potato-peel-pie-society.jpg",
+          "https://m.media-amazon.com/images/I/51OuzzKsMwL._AC_UF894,1000_QL80_.jpg",
         description:
           "Set in the aftermath of World War II, this novel is told through a series of letters and explores the story of a writer who forms a bond with the residents of Guernsey Island, occupied by the Germans during the war.",
       },
@@ -1569,7 +1633,8 @@ const BookData = [
         ISBN: "9780440212560",
         year: 1991,
         author: "Diana Gabaldon",
-        image: "https://example.com/outlander.jpg",
+        image:
+          "https://images.thalia.media/07/-/b641eb408e4d437e8c79826681aa3ff3/outlander-taschenbuch-diana-gabaldon-englisch.jpeg",
         description:
           "This historical time-travel novel follows the story of Claire Randall, a nurse from 1945 who is transported back in time to 1743 Scotland, where she becomes involved in the Jacobite risings.",
       },
@@ -1580,7 +1645,8 @@ const BookData = [
         ISBN: "9780156028356",
         year: 1982,
         author: "Alice Walker",
-        image: "https://example.com/the-color-purple.jpg",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRllRer8Gx8LRtYvtRCTxQuFelEst5VXFZyY-dsrAlKfbFiURZ1SP7Hr6UjQA40r6O2eJ4&usqp=CAU",
         description:
           "Set in the Southern United States during the early 20th century, this novel explores the lives of African American women through the character of Celie and addresses themes of racism, sexism, and identity.",
       },
@@ -1591,7 +1657,8 @@ const BookData = [
         ISBN: "9780778309451",
         year: 2020,
         author: "Alka Joshi",
-        image: "https://example.com/the-henna-artist.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/814Kbc4QaaS._AC_UF1000,1000_QL80_.jpg",
         description:
           "Set in 1950s India, this book follows the story of a talented henna artist named Lakshmi, her journey to independence, and the challenges she faces in a changing society.",
       },
@@ -1602,7 +1669,7 @@ const BookData = [
         ISBN: "9780143034902",
         year: 2004,
         author: "Carlos Ruiz Zafón",
-        image: "https://example.com/the-shadow-of-the-wind.jpg",
+        image: "https://m.media-amazon.com/images/I/41q0lAONh4L.jpg",
         description:
           "Set in post-war Barcelona, Spain, this novel explores the mysterious world of books through the story of a young boy named Daniel who becomes obsessed with a forgotten author.",
       },
@@ -1613,7 +1680,8 @@ const BookData = [
         ISBN: "9780142423622",
         year: 2016,
         author: "Ruta Sepetys",
-        image: "https://example.com/salt-to-the-sea.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/91ZGmZPy2iL._AC_UF894,1000_QL80_.jpg",
         description:
           "Set during World War II, this book tells the intertwined stories of four young individuals fleeing from the advancing Red Army and seeking refuge on the Wilhelm Gustloff, a German military ship.",
       },
@@ -1624,7 +1692,8 @@ const BookData = [
         ISBN: "9780312351626",
         year: 2002,
         author: "Jennifer Donnelly",
-        image: "https://example.com/the-tea-rose.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/41QTBXC2XQL._AC_UF894,1000_QL80_.jpg",
         description:
           "Set in Victorian London, this novel follows the life of Fiona Finnegan, a young woman who overcomes adversity and builds a successful tea business while navigating love and tragedy.",
       },
@@ -1635,7 +1704,8 @@ const BookData = [
         ISBN: "9780385490443",
         year: 1996,
         author: "Margaret Atwood",
-        image: "https://example.com/alias-grace.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71DDe4txxLL._AC_UF894,1000_QL80_.jpg",
         description:
           "Based on a true story, this novel is set in 19th-century Canada and tells the story of Grace Marks, a young Irish immigrant convicted of murder, as she recounts her experiences and seeks to uncover the truth.",
       },
@@ -1654,7 +1724,8 @@ const BookData = [
         ISBN: "9780553577129",
         year: 1947,
         author: "Anne Frank",
-        image: "https://example.com/the-diary-of-a-young-girl.jpg",
+        image:
+          "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1560816565l/48855.jpg",
         description:
           "The diary of Anne Frank, a Jewish girl hiding from the Nazis during World War II, provides an intimate and powerful account of her life and experiences in hiding.",
       },
@@ -1665,7 +1736,8 @@ const BookData = [
         ISBN: "9781451648539",
         year: 2011,
         author: "Walter Isaacson",
-        image: "https://example.com/steve-jobs.jpg",
+        image:
+          "https://kbimages1-a.akamaihd.net/caee148f-5805-45bd-9cbf-938f2373b8d8/353/569/90/False/steve-jobs-the-life-lessons-rules-for-success.jpg",
         description:
           "This biography explores the life and achievements of Steve Jobs, co-founder of Apple Inc., and provides insights into his innovative thinking and leadership style.",
       },
@@ -1676,7 +1748,8 @@ const BookData = [
         ISBN: "9780345350688",
         year: 1965,
         author: "Malcolm X",
-        image: "https://example.com/the-autobiography-of-malcolm-x.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/819Mwerum4L._AC_UF894,1000_QL80_.jpg",
         description:
           "In this autobiography, civil rights activist Malcolm X shares his personal journey, transformation, and experiences in advocating for racial equality and justice.",
       },
@@ -1687,7 +1760,8 @@ const BookData = [
         ISBN: "9780812974492",
         year: 2010,
         author: "Laura Hillenbrand",
-        image: "https://example.com/unbroken.jpg",
+        image:
+          "https://www.booksatruestory.com/wp-content/uploads/2015/10/Book-Cover-Unbroken-Laura-Hillenbrand.jpg",
         description:
           "This biography follows the extraordinary life of Louis Zamperini, an Olympic runner and World War II veteran who survived a plane crash, weeks adrift at sea, and brutal years as a prisoner of war.",
       },
@@ -1698,7 +1772,8 @@ const BookData = [
         ISBN: "9781524763138",
         year: 2018,
         author: "Michelle Obama",
-        image: "https://example.com/becoming.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/81x6aLIfbHL._AC_UF894,1000_QL80_.jpg",
         description:
           "Michelle Obama, former First Lady of the United States, shares her personal and inspiring journey, from her childhood in Chicago to her time in the White House.",
       },
@@ -1709,7 +1784,8 @@ const BookData = [
         ISBN: "9780553577129",
         year: 1947,
         author: "Anne Frank",
-        image: "https://example.com/the-diary-of-a-young-girl.jpg",
+        image:
+          "https://images-eu.ssl-images-amazon.com/images/I/71O7+oS69YL._AC_UL600_SR600,600_.jpg",
         description:
           "The diary of Anne Frank, a Jewish girl hiding from the Nazis during World War II, provides an intimate and powerful account of her life and experiences in hiding.",
       },
@@ -1720,7 +1796,8 @@ const BookData = [
         ISBN: "9780399590504",
         year: 2018,
         author: "Tara Westover",
-        image: "https://example.com/educated.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/91BHu7xj8eL._AC_UF894,1000_QL80_.jpg",
         description:
           "This memoir tells the story of Tara Westover, who grows up in a strict and abusive household in rural Idaho but eventually escapes and goes on to earn a PhD from Cambridge University.",
       },
@@ -1731,7 +1808,8 @@ const BookData = [
         ISBN: "9781400052189",
         year: 2010,
         author: "Rebecca Skloot",
-        image: "https://example.com/the-immortal-life-of-henrietta-lacks.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/91m5vlC0niL._AC_UF894,1000_QL80_.jpg",
         description:
           "This book explores the story of Henrietta Lacks, an African American woman whose cells were taken without her consent and used for groundbreaking medical research.",
       },
@@ -1742,7 +1820,8 @@ const BookData = [
         ISBN: "9780316548182",
         year: 1994,
         author: "Nelson Mandela",
-        image: "https://example.com/long-walk-to-freedom.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/51sm8zIBuKS._AC_UF894,1000_QL80_.jpg",
         description:
           "Nelson Mandela, the iconic South African leader, shares his autobiography, recounting his struggle against apartheid and his eventual presidency.",
       },
@@ -1753,7 +1832,8 @@ const BookData = [
         ISBN: "9781501139154",
         year: 2017,
         author: "Walter Isaacson",
-        image: "https://example.com/leonardo-da-vinci.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71HqNnaZQ8L._AC_UF1000,1000_QL80_.jpg",
         description:
           "This biography delves into the life and achievements of Leonardo da Vinci, the renowned artist, scientist, and inventor of the Renaissance era.",
       },
@@ -1764,7 +1844,8 @@ const BookData = [
         ISBN: "9780553577129",
         year: 1947,
         author: "Anne Frank",
-        image: "https://example.com/the-diary-of-a-young-girl.jpg",
+        image:
+          "https://cdn.shopify.com/s/files/1/0571/6574/2237/products/6949_1024x1024.jpg?v=1628890366",
         description:
           "The diary of Anne Frank, a Jewish girl hiding from the Nazis during World War II, provides an intimate and powerful account of her life and experiences in hiding.",
       },
@@ -1775,7 +1856,8 @@ const BookData = [
         ISBN: "9780060936228",
         year: 2010,
         author: "Patti Smith",
-        image: "https://example.com/just-kids.jpg",
+        image:
+          "https://images.thalia.media/07/-/c4dafdaeb8f74479bfe379a2034e6759/just-kids-taschenbuch-patti-smith.jpeg",
         description:
           "Musician Patti Smith recalls her relationship with artist Robert Mapplethorpe in this memoir, offering insights into their creative journeys and the bohemian culture of New York City in the 1960s and 1970s.",
       },
@@ -1786,7 +1868,7 @@ const BookData = [
         ISBN: "9781501135927",
         year: 2016,
         author: "Phil Knight",
-        image: "https://example.com/shoe-dog.jpg",
+        image: "https://m.media-amazon.com/images/I/41k+WVPLwZL.jpg",
         description:
           "Phil Knight, the co-founder of Nike, shares his memoir, recounting the challenges and triumphs of building one of the world's most iconic brands.",
       },
@@ -1797,7 +1879,7 @@ const BookData = [
         ISBN: "9780743247542",
         year: 2005,
         author: "Jeannette Walls",
-        image: "https://example.com/the-glass-castle.jpg",
+        image: "https://m.media-amazon.com/images/I/51vAfmFXQ4L.jpg",
         description:
           "In this memoir, Jeannette Walls reflects on her unconventional and nomadic childhood, growing up with parents who had a unique and often chaotic approach to life.",
       },
@@ -1808,7 +1890,8 @@ const BookData = [
         ISBN: "9780385486804",
         year: 1996,
         author: "Jon Krakauer",
-        image: "https://example.com/into-the-wild.jpg",
+        image:
+          "https://libraryof1000books.files.wordpress.com/2019/06/into-the-wild.jpg",
         description:
           "This book tells the true story of Christopher McCandless, a young man who gave up his possessions and ventured into the Alaskan wilderness, seeking a deeper connection with nature.",
       },
@@ -1819,7 +1902,8 @@ const BookData = [
         ISBN: "9780800794057",
         year: 1971,
         author: "Corrie ten Boom",
-        image: "https://example.com/the-hiding-place.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71b2sCYzBeS._AC_UF1000,1000_QL80_.jpg",
         description:
           "Corrie ten Boom, a Dutch Christian who helped hide Jews during the Holocaust, shares her powerful story of faith, courage, and survival.",
       },
@@ -1830,7 +1914,8 @@ const BookData = [
         ISBN: "9780399588174",
         year: 2016,
         author: "Trevor Noah",
-        image: "https://example.com/born-a-crime.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/91Mjy30y8sL._AC_UF894,1000_QL80_.jpg",
         description:
           "Comedian Trevor Noah recounts his upbringing in South Africa during the apartheid era, highlighting the complexities of racial identity and the power of humor.",
       },
@@ -1841,7 +1926,8 @@ const BookData = [
         ISBN: "9781476728742",
         year: 2015,
         author: "David McCullough",
-        image: "https://example.com/the-wright-brothers.jpg",
+        image:
+          "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1430942575i/22609391.jpg",
         description:
           "This biography explores the lives of Wilbur and Orville Wright, the pioneers of aviation who successfully built and flew the world's first powered airplane.",
       },
@@ -1852,7 +1938,8 @@ const BookData = [
         ISBN: "9780743246989",
         year: 1991,
         author: "Jung Chang",
-        image: "https://example.com/wild-swans.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/810UT1m+6ZL._AC_UF894,1000_QL80_.jpg",
         description:
           "Jung Chang chronicles the lives of three generations of women in her own family, spanning the tumultuous history of China in the 20th century.",
       },
@@ -1863,7 +1950,8 @@ const BookData = [
         ISBN: "9780307388407",
         year: 2009,
         author: "Andre Agassi",
-        image: "https://example.com/open.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/91GKLzZAj3L._AC_UF894,1000_QL80_.jpg",
         description:
           "In this memoir, tennis champion Andre Agassi provides an honest and revealing account of his career, personal struggles, and journey to find himself.",
       },
@@ -1882,7 +1970,8 @@ const BookData = [
         ISBN: "978-0553577129",
         year: 1947,
         author: "Anne Frank",
-        image: "https://example.com/book1.jpg",
+        image:
+          "https://cdn.waterstones.com/bookjackets/large/9780/2419/9780241952443.jpg",
         description:
           "The diary of Anne Frank, a Jewish girl hiding from the Nazis during World War II, providing a powerful and personal account of her experiences.",
       },
@@ -1893,7 +1982,8 @@ const BookData = [
         ISBN: "978-0316548182",
         year: 1994,
         author: "Nelson Mandela",
-        image: "https://example.com/book2.jpg",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTosd_dLiaSe67UXEJr0nNfar8Knk0TJkRyR-jROJLoHUebhpFH_xd39dFovAdbsguElgM&usqp=CAU",
         description:
           "The autobiography of Nelson Mandela, South Africa's first black president, detailing his journey from imprisonment to the presidency and his fight against apartheid.",
       },
@@ -1904,7 +1994,8 @@ const BookData = [
         ISBN: "978-1524763138",
         year: 2018,
         author: "Michelle Obama",
-        image: "https://example.com/book3.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/81x6aLIfbHL._AC_UF894,1000_QL80_.jpg",
         description:
           "Michelle Obama's memoir, chronicling her life from her childhood on the South Side of Chicago to her years as First Lady of the United States.",
       },
@@ -1915,7 +2006,7 @@ const BookData = [
         ISBN: "978-0345350688",
         year: 1965,
         author: "Malcolm X",
-        image: "https://example.com/book4.jpg",
+        image: "https://pictures.abebooks.com/inventory/15260478384.jpg",
         description:
           "The autobiography of civil rights activist Malcolm X, tracing his journey from his troubled youth to his leadership in the Nation of Islam and his eventual conversion to Sunni Islam.",
       },
@@ -1926,7 +2017,7 @@ const BookData = [
         ISBN: "978-0345514400",
         year: 1969,
         author: "Maya Angelou",
-        image: "https://example.com/book5.jpg",
+        image: "https://pictures.abebooks.com/isbn/9780553380019-uk.jpg",
         description:
           "Maya Angelou's memoir, depicting her early years, including her experiences with racism, trauma, and her journey towards self-discovery and empowerment.",
       },
@@ -1937,7 +2028,8 @@ const BookData = [
         ISBN: "978-0399590504",
         year: 2018,
         author: "Tara Westover",
-        image: "https://example.com/book6.jpg",
+        image:
+          "https://www.amysbookshelf.co.uk/wp-content/uploads/2021/05/40060637.jpg",
         description:
           "Tara Westover's memoir, recounting her upbringing in a strict and abusive household in rural Idaho, and her quest for education and self-liberation.",
       },
@@ -1948,7 +2040,8 @@ const BookData = [
         ISBN: "978-0486245935",
         year: 1927,
         author: "Mahatma Gandhi",
-        image: "https://example.com/book7.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71GWX22G92L._AC_UF1000,1000_QL80_.jpg",
         description:
           "Mahatma Gandhi's autobiography, detailing his spiritual and political journey in India's struggle for independence and his philosophy of nonviolent resistance.",
       },
@@ -1959,7 +2052,7 @@ const BookData = [
         ISBN: "978-0684842677",
         year: 1996,
         author: "Frank McCourt",
-        image: "https://example.com/book8.jpg",
+        image: "https://m.media-amazon.com/images/I/51ILSNc5CHL.jpg",
         description:
           "Frank McCourt's memoir, recounting his impoverished childhood in Brooklyn and Ireland, and his eventual journey to America.",
       },
@@ -1970,7 +2063,7 @@ const BookData = [
         ISBN: "978-0374500016",
         year: 1956,
         author: "Elie Wiesel",
-        image: "https://example.com/book9.jpg",
+        image: "https://pictures.abebooks.com/isbn/9780553272536-us.jpg",
         description:
           "Elie Wiesel's memoir, describing his experiences as a Jewish teenager during the Holocaust, including his time at Auschwitz and Buchenwald concentration camps.",
       },
@@ -1981,7 +2074,8 @@ const BookData = [
         ISBN: "978-0743247542",
         year: 2005,
         author: "Jeannette Walls",
-        image: "https://example.com/book10.jpg",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQmHTOO_tcVi50tLfPbJWsUKDyGk2OKH-EVfFDi2czE0GPrAq7CbG7E2yhGmQgH5C2-Lw&usqp=CAU",
         description:
           "Jeannette Walls' memoir, depicting her unconventional upbringing by her dysfunctional and impoverished parents and her journey towards self-reliance and success.",
       },
@@ -1992,7 +2086,8 @@ const BookData = [
         ISBN: "978-0553577129",
         year: 1947,
         author: "Anne Frank",
-        image: "https://example.com/book11.jpg",
+        image:
+          "https://www.porchlightbooks.com/globalassets/book-covers/9789389847987.jpg?w=1000&scale=both&mode=crop&u=638174037451800000",
         description:
           "The diary of Anne Frank, a Jewish girl hiding from the Nazis during World War II, providing a powerful and personal account of her experiences.",
       },
@@ -2003,7 +2098,8 @@ const BookData = [
         ISBN: "978-0316548182",
         year: 1994,
         author: "Nelson Mandela",
-        image: "https://example.com/book12.jpg",
+        image:
+          "https://images-eu.ssl-images-amazon.com/images/I/813UkeMMTiL._AC_UL600_SR600,600_.jpg",
         description:
           "The autobiography of Nelson Mandela, South Africa's first black president, detailing his journey from imprisonment to the presidency and his fight against apartheid.",
       },
@@ -2014,7 +2110,8 @@ const BookData = [
         ISBN: "978-1524763138",
         year: 2018,
         author: "Michelle Obama",
-        image: "https://example.com/book13.jpg",
+        image:
+          "https://static01.nyt.com/images/2018/11/09/books/review/09bookobama-copy/09bookobama-copy-videoSixteenByNineJumbo1600-v3.jpg",
         description:
           "Michelle Obama's memoir, chronicling her life from her childhood on the South Side of Chicago to her years as First Lady of the United States.",
       },
@@ -2025,7 +2122,8 @@ const BookData = [
         ISBN: "978-0345350688",
         year: 1965,
         author: "Malcolm X",
-        image: "https://example.com/book14.jpg",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSabtJdXzS725S0_7SUCqtLJQsQze0C4rB-Lg&usqp=CAU",
         description:
           "The autobiography of civil rights activist Malcolm X, tracing his journey from his troubled youth to his leadership in the Nation of Islam and his eventual conversion to Sunni Islam.",
       },
@@ -2036,7 +2134,8 @@ const BookData = [
         ISBN: "978-0345514400",
         year: 1969,
         author: "Maya Angelou",
-        image: "https://example.com/book15.jpg",
+        image:
+          "https://cdn.shopify.com/s/files/1/0736/0537/products/Book050_31d28c38-8529-4591-9823-9d52575e2c84.jpg?v=1667752575",
         description:
           "Maya Angelou's memoir, depicting her early years, including her experiences with racism, trauma, and her journey towards self-discovery and empowerment.",
       },
@@ -2047,7 +2146,8 @@ const BookData = [
         ISBN: "978-0399590504",
         year: 2018,
         author: "Tara Westover",
-        image: "https://example.com/book16.jpg",
+        image:
+          "https://kayazbookstore.pk/wp-content/uploads/2022/01/buy-educated-by-tara-westover-onlinebooksoutlet-1.jpg",
         description:
           "Tara Westover's memoir, recounting her upbringing in a strict and abusive household in rural Idaho, and her quest for education and self-liberation.",
       },
@@ -2058,7 +2158,8 @@ const BookData = [
         ISBN: "978-0486245935",
         year: 1927,
         author: "Mahatma Gandhi",
-        image: "https://example.com/book17.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/61gKoIuJpbL._AC_UF1000,1000_QL80_.jpg",
         description:
           "Mahatma Gandhi's autobiography, detailing his spiritual and political journey in India's struggle for independence and his philosophy of nonviolent resistance.",
       },
@@ -2069,7 +2170,8 @@ const BookData = [
         ISBN: "978-0684842677",
         year: 1996,
         author: "Frank McCourt",
-        image: "https://example.com/book18.jpg",
+        image:
+          "https://d28hgpri8am2if.cloudfront.net/book_images/cvr9780684859330_9780684859330_hr.jpg",
         description:
           "Frank McCourt's memoir, recounting his impoverished childhood in Brooklyn and Ireland, and his eventual journey to America.",
       },
@@ -2080,7 +2182,8 @@ const BookData = [
         ISBN: "978-0374500016",
         year: 1956,
         author: "Elie Wiesel",
-        image: "https://example.com/book19.jpg",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6vivDaOl0I0JDMLmzTmGwcaB0MbHpbOFvJw&usqp=CAU",
         description:
           "Elie Wiesel's memoir, describing his experiences as a Jewish teenager during the Holocaust, including his time at Auschwitz and Buchenwald concentration camps.",
       },
@@ -2091,7 +2194,7 @@ const BookData = [
         ISBN: "978-0743247542",
         year: 2005,
         author: "Jeannette Walls",
-        image: "https://example.com/book20.jpg",
+        image: "https://m.media-amazon.com/images/I/51vAfmFXQ4L.jpg",
         description:
           "Jeannette Walls' memoir, depicting her unconventional upbringing by her dysfunctional and impoverished parents and her journey towards self-reliance and success.",
       },
@@ -2110,7 +2213,8 @@ const BookData = [
         ISBN: "978-0-7432-6951-3",
         year: 1989,
         author: "Stephen R. Covey",
-        image: "https://example.com/book1.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/81+zleD0DUL._AC_UF894,1000_QL80_.jpg",
         description:
           "A classic self-help book that presents seven habits for personal and professional success.",
       },
@@ -2121,7 +2225,8 @@ const BookData = [
         ISBN: "978-0-7352-3068-2",
         year: 2018,
         author: "James Clear",
-        image: "https://example.com/book2.jpg",
+        image:
+          "https://images.thalia.media/-/BF2000-2000/3985431ef8d94d6aabd59cc4bc8ea192/atomic-habits-taschenbuch-james-clear-englisch.jpeg",
         description:
           "A practical guide to breaking bad habits and building good ones with small incremental changes.",
       },
@@ -2132,7 +2237,8 @@ const BookData = [
         ISBN: "978-0-06-245771-4",
         year: 2016,
         author: "Mark Manson",
-        image: "https://example.com/book3.jpg",
+        image:
+          "https://bookstore.uwo.ca/files/styles/product_full_primary_lg/public/product-images/subtleart.jpg?itok=Z1uRXhDU",
         description:
           "A counterintuitive approach to living a good life by focusing on what truly matters and letting go of the rest.",
       },
@@ -2143,7 +2249,7 @@ const BookData = [
         ISBN: "978-1-59463-200-7",
         year: 2006,
         author: "Carol S. Dweck",
-        image: "https://example.com/book4.jpg",
+        image: "https://m.media-amazon.com/images/I/41vS70Qo3rL.jpg",
         description:
           "Explores the concept of mindset and how it can influence personal and professional success.",
       },
@@ -2154,7 +2260,8 @@ const BookData = [
         ISBN: "978-0-8070-1429-5",
         year: 1946,
         author: "Viktor E. Frankl",
-        image: "https://example.com/book5.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/61nTspM+BYL._AC_UF894,1000_QL80_.jpg",
         description:
           "An inspirational account of Viktor Frankl's experiences in Nazi concentration camps and his insights on finding meaning in life.",
       },
@@ -2165,7 +2272,8 @@ const BookData = [
         ISBN: "978-1-59184-776-4",
         year: 2012,
         author: "Brené Brown",
-        image: "https://example.com/book6.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/81vjRI4HwvL._AC_UF894,1000_QL80_.jpg",
         description:
           "Encourages vulnerability and wholeheartedness as a path to courage and connection.",
       },
@@ -2176,7 +2284,8 @@ const BookData = [
         ISBN: "978-1-57731-152-3",
         year: 1997,
         author: "Eckhart Tolle",
-        image: "https://example.com/book7.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/714FbKtXS+L._AC_UF894,1000_QL80_.jpg",
         description:
           "Explores the concept of living in the present moment to find inner peace and fulfillment.",
       },
@@ -2187,7 +2296,8 @@ const BookData = [
         ISBN: "978-0-671-70881-7",
         year: 1936,
         author: "Dale Carnegie",
-        image: "https://example.com/book8.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71vK0WVQ4rL._AC_UF894,1000_QL80_.jpg",
         description:
           "Provides practical advice on building relationships, improving communication, and influencing others positively.",
       },
@@ -2198,7 +2308,7 @@ const BookData = [
         ISBN: "978-0-374-53355-7",
         year: 2011,
         author: "Daniel Kahneman",
-        image: "https://example.com/book9.jpg",
+        image: "https://www.punkt.ch/repoimg/2814-prod_main-Kahneman.jpg.jpg",
         description:
           "Explores the two systems of thinking that drive our decisions and the biases that affect our judgment.",
       },
@@ -2209,7 +2319,8 @@ const BookData = [
         ISBN: "978-0-307-35313-9",
         year: 2007,
         author: "Timothy Ferriss",
-        image: "https://example.com/book10.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/81qW97ndkvL._AC_UF894,1000_QL80_.jpg",
         description:
           "Presents strategies for escaping the 9-5 grind, automating businesses, and achieving lifestyle design.",
       },
@@ -2220,7 +2331,8 @@ const BookData = [
         ISBN: "978-1-101-88576-4",
         year: 2016,
         author: "Angela Duckworth",
-        image: "https://example.com/book11.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71xpBTu1otL._AC_UF894,1000_QL80_.jpg",
         description:
           "Explores the importance of passion and perseverance in achieving long-term goals and success.",
       },
@@ -2231,7 +2343,7 @@ const BookData = [
         ISBN: "978-0-06-231500-7",
         year: 1988,
         author: "Paulo Coelho",
-        image: "https://example.com/book12.jpg",
+        image: "https://cdn.dc5.ro/img-prod/9780007155668-2778602.jpg",
         description:
           "A fable about following one's dreams and finding personal legend, reminding readers of the importance of listening to their hearts.",
       },
@@ -2242,7 +2354,8 @@ const BookData = [
         ISBN: "978-0-553-38371-3",
         year: 1995,
         author: "Daniel Goleman",
-        image: "https://example.com/book13.jpg",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRNK3K_lLmipMpZGF0Bq1DBlvl_50XQtLGNQyo4hb213_mvb6mjNfBaa1D7ceYfTiqtPY&usqp=CAU",
         description:
           "Explores the concept of emotional intelligence and its impact on personal and professional success.",
       },
@@ -2253,7 +2366,8 @@ const BookData = [
         ISBN: "978-1-61499-723-6",
         year: 2012,
         author: "Hal Elrod",
-        image: "https://example.com/book14.jpg",
+        image:
+          "https://images-eu.ssl-images-amazon.com/images/I/81Qc3T3YIsL._AC_UL600_SR600,600_.jpg",
         description:
           "Introduces a morning routine that can transform your life by improving productivity, focus, and overall well-being.",
       },
@@ -2264,7 +2378,8 @@ const BookData = [
         ISBN: "978-0-06-124189-5",
         year: 1984,
         author: "Robert B. Cialdini",
-        image: "https://example.com/book15.jpg",
+        image:
+          "https://damianqualter.com/wp-content/uploads/2020/03/Influence-The-Psychology-of-Persuasion-Robert-B.-Cialdini-PH.D..jpg",
         description:
           "Reveals the psychological principles behind persuasion and how they can be used ethically in various settings.",
       },
@@ -2275,7 +2390,8 @@ const BookData = [
         ISBN: "978-0-307-35214-9",
         year: 2012,
         author: "Susan Cain",
-        image: "https://example.com/book16.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71K8Ji-Dt2L._AC_UF894,1000_QL80_.jpg",
         description:
           "Celebrates the power and unique strengths of introverts in a society that often values extroverted traits.",
       },
@@ -2286,7 +2402,8 @@ const BookData = [
         ISBN: "978-1-59285-849-1",
         year: 2010,
         author: "Brené Brown",
-        image: "https://example.com/book17.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/81SnOscVFDL._AC_UF1000,1000_QL80_.jpg",
         description:
           "Explores the importance of embracing imperfections and living wholeheartedly by cultivating courage, compassion, and connection.",
       },
@@ -2297,7 +2414,8 @@ const BookData = [
         ISBN: "978-0-14-044933-4",
         year: 180,
         author: "Marcus Aurelius",
-        image: "https://example.com/book18.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/51cQEdN9KuL._AC_UF1000,1000_QL80_.jpg",
         description:
           "A collection of personal reflections and stoic philosophy from the Roman Emperor Marcus Aurelius.",
       },
@@ -2308,7 +2426,7 @@ const BookData = [
         ISBN: "978-0-307-45249-6",
         year: 2010,
         author: "Shawn Achor",
-        image: "https://example.com/book19.jpg",
+        image: "https://m.media-amazon.com/images/I/41obIJ-AVIL.jpg",
         description:
           "Explores the connection between happiness and success, offering strategies to cultivate a positive mindset.",
       },
@@ -2319,7 +2437,8 @@ const BookData = [
         ISBN: "978-0-7624-5243-7",
         year: 2013,
         author: "Jen Sincero",
-        image: "https://example.com/book20.jpg",
+        image:
+          "https://images.squarespace-cdn.com/content/v1/5b37e28045776e38aea6bb5e/1613225521469-6QL7CC8HDL6YQDEO5DNZ/you+are+a+badass.png",
         description:
           "Motivational advice to help readers identify and overcome self-sabotaging beliefs and live a life they love.",
       },
@@ -2338,7 +2457,8 @@ const BookData = [
         ISBN: "9780307887894",
         year: 2011,
         author: "Eric Ries",
-        image: "https://example.com/the-lean-startup.jpg",
+        image:
+          "https://media.licdn.com/dms/image/D4D12AQFEDFMayhIzUQ/article-cover_image-shrink_600_2000/0/1679332045106?e=2147483647&v=beta&t=ny0FuJnLxWQlZ4qiKZrw-F6aX4KaYtqaPmgeS9Fd-Q0",
         description:
           "This book introduces the concept of the lean startup methodology which emphasizes iterative product development and validated learning to build successful businesses",
       },
@@ -2349,7 +2469,8 @@ const BookData = [
         ISBN: "9780804139298",
         year: 2014,
         author: "Peter Thiel, Blake Masters",
-        image: "https://example.com/zero-to-one.jpg",
+        image:
+          "https://content.fortune.com/wp-content/uploads/2014/09/thi22_3.jpg",
         description:
           "In this book Peter Thiel shares his insights on how to build and create successful companies by focusing on innovation and unique ideas.",
       },
@@ -2360,7 +2481,8 @@ const BookData = [
         ISBN: "9780374533557",
         year: 2011,
         author: "Daniel Kahneman",
-        image: "https://example.com/thinking-fast-and-slow.jpg",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI21CtUI5I_dysg2e2Yo-9EgH791lFB5EVUg&usqp=CAU",
         description:
           "Nobel laureate Daniel Kahneman explores the two systems of thinking that drive our decisions and how understanding them can improve our judgment in business and life.",
       },
@@ -2371,7 +2493,8 @@ const BookData = [
         ISBN: "9780066620992",
         year: 2001,
         author: "Jim Collins",
-        image: "https://example.com/good-to-great.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71LhjimPd8L._AC_UF894,1000_QL80_.jpg",
         description:
           "This book examines why some companies make the leap from being good to becoming great and provides insights into the strategies and practices that contribute to their success.",
       },
@@ -2382,7 +2505,7 @@ const BookData = [
         ISBN: "9781633691780",
         year: 1997,
         author: "Clayton M. Christensen",
-        image: "https://example.com/the-innovators-dilemma.jpg",
+        image: "https://m.media-amazon.com/images/I/51CMOkZGqML.jpg",
         description:
           "Clayton M. Christensen explores the concept of disruptive innovation and its impact on established companies, providing guidance on how to navigate and adapt to disruptive change.",
       },
@@ -2393,7 +2516,8 @@ const BookData = [
         ISBN: "9781591846444",
         year: 2009,
         author: "Simon Sinek",
-        image: "https://example.com/start-with-why.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71XnX0Pe2bL._AC_UF894,1000_QL80_.jpg",
         description:
           "Simon Sinek presents the idea that successful businesses and leaders start with a clear understanding of their 'why' or purpose, which inspires and influences their actions.",
       },
@@ -2405,7 +2529,7 @@ const BookData = [
         year: 1989,
         author: "Stephen R. Covey",
         image:
-          "https://example.com/the-7-habits-of-highly-effective-people.jpg",
+          "https://m.media-amazon.com/images/I/71oei0tAnzL._AC_UF894,1000_QL80_.jpg",
         description:
           "This book provides a holistic approach to personal and professional effectiveness, outlining seven habits that can help individuals become more productive and successful.",
       },
@@ -2416,7 +2540,8 @@ const BookData = [
         ISBN: "9781603580557",
         year: 2008,
         author: "Donella H. Meadows",
-        image: "https://example.com/thinking-in-systems.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/51g2prGD7dL._AC_UF894,1000_QL80_.jpg",
         description:
           "Donella H. Meadows introduces systems thinking as a way to understand and solve complex problems in business and society, emphasizing the interconnectedness of systems.",
       },
@@ -2427,7 +2552,8 @@ const BookData = [
         ISBN: "9781599869773",
         year: 500,
         author: "Sun Tzu",
-        image: "https://example.com/the-art-of-war.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/71MizulW5AL._AC_UF894,1000_QL80_.jpg",
         description:
           "This ancient Chinese military treatise offers strategic insights that can be applied to business, emphasizing the importance of planning, leadership, and understanding the competition.",
       },
@@ -2438,7 +2564,7 @@ const BookData = [
         ISBN: "9780307465351",
         year: 2007,
         author: "Timothy Ferriss",
-        image: "https://example.com/the-four-hour-work-week.jpg",
+        image: "https://m.media-amazon.com/images/I/51iGkLC6jhL.jpg",
         description:
           "Timothy Ferriss shares his approach to escaping the 9-5 grind and designing a lifestyle that emphasizes freedom and work-life balance through entrepreneurship and automation.",
       },
@@ -2449,7 +2575,8 @@ const BookData = [
         ISBN: "9781449335670",
         year: 2013,
         author: "Alistair Croll, Benjamin Yoskovitz",
-        image: "https://example.com/lean-analytics.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/61jWSdHF1VL._AC_UF1000,1000_QL80_.jpg",
         description:
           "This book introduces the concept of lean analytics and provides practical guidance on how to use data and metrics to build, measure, and improve successful businesses.",
       },
@@ -2460,7 +2587,8 @@ const BookData = [
         ISBN: "9781633692879",
         year: 2003,
         author: "Clayton M. Christensen, Michael E. Raynor",
-        image: "https://example.com/the-innovators-solution.jpg",
+        image:
+          "https://images-na.ssl-images-amazon.com/images/I/81eIYLtvspL._AC_UL600_SR600,600_.jpg",
         description:
           "Building upon 'The Innovator's Dilemma,' this book offers a framework for creating disruptive innovations and provides examples of successful strategies for growth.",
       },
@@ -2471,7 +2599,8 @@ const BookData = [
         ISBN: "9780374533557",
         year: 2011,
         author: "Daniel Kahneman",
-        image: "https://example.com/thinking-fast-and-slow.jpg",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT97TmCCNPmLAprjNgH5yfIaGXof8Hv-BTq-Q&usqp=CAU",
         description:
           "Nobel laureate Daniel Kahneman explores the two systems of thinking that drive our decisions and how understanding them can improve our judgment in business and life.",
       },
@@ -2482,7 +2611,8 @@ const BookData = [
         ISBN: "9780062674678",
         year: 2018,
         author: "Gary Vaynerchuk",
-        image: "https://example.com/crushing-it.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/51lPLOEdazL._AC_UF894,1000_QL80_.jpg",
         description:
           "Gary Vaynerchuk shares insights and strategies for leveraging social media and the internet to build a personal brand and succeed in business in the digital age.",
       },
@@ -2493,7 +2623,8 @@ const BookData = [
         ISBN: "9780062695185",
         year: 1995,
         author: "Michael E. Gerber",
-        image: "https://example.com/the-e-myth-revisited.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/61CSzmk-twL._AC_UF894,1000_QL80_.jpg",
         description:
           "This book dispels common myths about entrepreneurship and offers guidance on how to build a successful small business by focusing on systems and processes.",
       },
@@ -2504,7 +2635,8 @@ const BookData = [
         ISBN: "9780525429562",
         year: 2016,
         author: "Adam Grant",
-        image: "https://example.com/originals.jpg",
+        image:
+          "https://images.thalia.media/07/-/15f095cb96a74ad59d32acb350ccbb4b/originals-taschenbuch-adam-grant-englisch.jpeg",
         description:
           "Adam Grant explores the qualities and behaviors of original thinkers and provides insights on how to champion new ideas and drive positive change in organizations.",
       },
@@ -2515,7 +2647,8 @@ const BookData = [
         ISBN: "9780374533557",
         year: 2011,
         author: "Daniel Kahneman",
-        image: "https://example.com/thinking-fast-and-slow.jpg",
+        image:
+          "https://images.squarespace-cdn.com/content/v1/596c0cd63e00beb869b40668/1564498451803-71JZ2B9K9AZ72IBBW8I7/thinking+fast+and+slow.jpg",
         description:
           "Nobel laureate Daniel Kahneman explores the two systems of thinking that drive our decisions and how understanding them can improve our judgment in business and life.",
       },
@@ -2526,7 +2659,8 @@ const BookData = [
         ISBN: "9780812981605",
         year: 2012,
         author: "Charles Duhigg",
-        image: "https://example.com/the-power-of-habit.jpg",
+        image:
+          "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1545854312i/12609433.jpg",
         description:
           "This book explores the science behind habit formation and provides insights on how to harness the power of habits to improve productivity, performance, and success.",
       },
@@ -2537,7 +2671,8 @@ const BookData = [
         ISBN: "9781501135927",
         year: 2016,
         author: "Phil Knight",
-        image: "https://example.com/shoe-dog.jpg",
+        image:
+          "https://m.media-amazon.com/images/I/41x7YA9mk4L._AC_UF894,1000_QL80_.jpg",
         description:
           "Phil Knight, co-founder of Nike, shares the story of how he built the iconic company, overcoming challenges and sharing valuable lessons in entrepreneurship.",
       },
@@ -2560,7 +2695,246 @@ const BookData = [
     category: "Travel",
     image:
       "https://vader-prod.s3.amazonaws.com/1636727908-here-there-elsewhere-stories-from-the-road-by-william-least-heat-moon-1636727894.jpg",
-    books: [],
+    books: [
+      {
+        id: 1,
+        name: "Into the Wild",
+        price: 12.99,
+        ISBN: "9780385486804",
+        year: 1996,
+        author: "Jon Krakauer",
+        image:
+          "https://m.media-amazon.com/images/I/811k9HNhaiL._AC_UF894,1000_QL80_.jpg",
+        description:
+          "A true story of Christopher McCandless, who ventured into the Alaskan wilderness.",
+      },
+      {
+        id: 2,
+        name: "The Alchemist",
+        price: 10.99,
+        ISBN: "9780062315007",
+        year: 1988,
+        author: "Paulo Coelho",
+        image:
+          "https://m.media-amazon.com/images/I/51sn5DbLkOL._AC_UF894,1000_QL80_.jpg",
+        description:
+          "A novel about a young Andalusian shepherd who follows his dreams in search of a hidden treasure.",
+      },
+      {
+        id: 3,
+        name: "In a Sunburned Country",
+        price: 14.95,
+        ISBN: "9780767903868",
+        year: 2001,
+        author: "Bill Bryson",
+        image:
+          "https://m.media-amazon.com/images/I/511w%2Bm1L4fL._SR600%2C315_PIWhiteStrip%2CBottomLeft%2C0%2C35_PIStarRatingFOURANDHALF%2CBottomLeft%2C360%2C-6_SR600%2C315_ZA10%252C030%2C445%2C290%2C400%2C400%2CAmazonEmberBold%2C12%2C4%2C0%2C0%2C5_SCLZZZZZZZ_FMpng_BG255%2C255%2C255.jpg",
+        description:
+          "A travelogue of the author's journey through Australia, exploring its landscapes, culture, and history.",
+      },
+      {
+        id: 4,
+        name: "Wild: From Lost to Found on the Pacific Crest Trail",
+        price: 9.99,
+        ISBN: "9780307476074",
+        year: 2012,
+        author: "Cheryl Strayed",
+        image:
+          "https://img1.od-cdn.com/ImageType-100/0111-1/%7B7CB2793B-E0E3-448F-9031-3E2B939C44F3%7DImg100.jpg",
+        description:
+          "A memoir of a woman's solo hike along the Pacific Crest Trail, reflecting on her life and personal growth.",
+      },
+      {
+        id: 5,
+        name: "A Walk in the Woods",
+        price: 11.99,
+        ISBN: "9780307279460",
+        year: 1998,
+        author: "Bill Bryson",
+        image:
+          "https://www.foliosociety.com/media/catalog/product/w/a/walk_bookshot.png?quality=80&fit=bounds&height=700&width=700&canvas=700:700",
+        description:
+          "A humorous account of the author's attempt to hike the Appalachian Trail with his friend.",
+      },
+      {
+        id: 6,
+        name: "Into Thin Air",
+        price: 13.99,
+        ISBN: "9780385494786",
+        year: 1997,
+        author: "Jon Krakauer",
+        image:
+          "https://target.scene7.com/is/image/Target/GUEST_27f9de7a-e966-4e1f-9a12-6a0eebe103bd?wid=488&hei=488&fmt=pjpeg",
+        description:
+          "A firsthand account of the 1996 Mount Everest disaster, where eight climbers died during summit attempts.",
+      },
+      {
+        id: 7,
+        name: "The Beach",
+        price: 8.99,
+        ISBN: "9780099428274",
+        year: 1997,
+        author: "Alex Garland",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwMFpCTuSQjaptbgl8_0YE1TYYZSkCugS0xw&usqp=CAU",
+        description:
+          "A novel about a young backpacker's search for a hidden beach paradise in Thailand.",
+      },
+      {
+        id: 8,
+        name: "The Art of Travel",
+        price: 12.95,
+        ISBN: "9780375725340",
+        year: 2002,
+        author: "Alain de Botton",
+        image:
+          "https://m.media-amazon.com/images/I/81Q4uUdbqNL._AC_UF894,1000_QL80_.jpg",
+        description:
+          "A philosophical exploration of travel and its influence on our experiences and perceptions of the world.",
+      },
+      {
+        id: 9,
+        name: "Travels with Charley: In Search of America",
+        price: 10.99,
+        ISBN: "9780140053203",
+        year: 1962,
+        author: "John Steinbeck",
+        image:
+          "https://m.media-amazon.com/images/I/81u+TKTIEDL._AC_UF894,1000_QL80_.jpg",
+        description:
+          "A travelogue of John Steinbeck's road trip across America with his poodle, Charley.",
+      },
+      {
+        id: 10,
+        name: "Under the Tuscan Sun",
+        price: 9.99,
+        ISBN: "9780767900386",
+        year: 1996,
+        author: "Frances Mayes",
+        image:
+          "https://i0.wp.com/howfarfromhome.com/wp-content/uploads/2021/01/MAYE-Book-Under_The_Tuscan_Sun-LR.jpg?fit=600%2C600&ssl=1",
+        description:
+          "A memoir of a woman who buys and restores an abandoned villa in Tuscany, Italy.",
+      },
+      {
+        id: 11,
+        name: "Vagabonding: An Uncommon Guide to the Art of Long-Term World Travel",
+        price: 16.0,
+        ISBN: "9780679647422",
+        year: 2002,
+        author: "Rolf Potts",
+        image:
+          "https://m.media-amazon.com/images/I/91ZqwURRsEL._AC_UF1000,1000_QL80_.jpg",
+        description:
+          "A guidebook for long-term travel, inspiring readers to embrace a life of adventure and exploration.",
+      },
+      {
+        id: 12,
+        name: "Turn Right at Machu Picchu: Rediscovering the Lost City One Step at a Time",
+        price: 11.99,
+        ISBN: "9780452297982",
+        year: 2011,
+        author: "Mark Adams",
+        image:
+          "https://images-na.ssl-images-amazon.com/images/I/41uZAp5FpQL._AC_UL600_SR600,600_.jpg",
+        description:
+          "A journalist's journey to follow in the footsteps of Hiram Bingham III and explore the mysteries of Machu Picchu.",
+      },
+      {
+        id: 13,
+        name: "The Lost City of Z: A Tale of Deadly Obsession in the Amazon",
+        price: 10.99,
+        ISBN: "9781400078455",
+        year: 2009,
+        author: "David Grann",
+        image:
+          "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1536867575i/26298159._SY540_.jpg",
+        description:
+          "An exploration of the Amazon rainforest and the mysterious disappearance of British explorer Percy Fawcett.",
+      },
+      {
+        id: 14,
+        name: "Tracks: A Woman's Solo Trek Across 1700 Miles of Australian Outback",
+        price: 12.95,
+        ISBN: "9780865472625",
+        year: 1995,
+        author: "Robyn Davidson",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhm4Bd5-THP-6pmBoBO8KP5zG823XsRXIICA&usqp=CAU",
+        description:
+          "A memoir of a woman's nine-month journey on foot through the Australian desert.",
+      },
+      {
+        id: 15,
+        name: "Eat, Pray, Love: One Woman's Search for Everything Across Italy, India, and Indonesia",
+        price: 9.99,
+        ISBN: "9780143038412",
+        year: 2006,
+        author: "Elizabeth Gilbert",
+        image: "https://www.buch24.de/img/xl_pid_dyn/pid3013493.jpg",
+        description:
+          "A memoir of a woman's year-long journey to find herself through travel, food, spirituality, and love.",
+      },
+      {
+        id: 16,
+        name: "The Great Railway Bazaar",
+        price: 14.99,
+        ISBN: "9780618658947",
+        year: 1975,
+        author: "Paul Theroux",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmlDDvYDPJajTgIpWuzn1qes_WVtiFhAb_1g&usqp=CAU",
+        description:
+          "A travelogue of the author's four-month journey by train from Europe to Asia, capturing the essence of train travel.",
+      },
+      {
+        id: 17,
+        name: "The Motorcycle Diaries: Notes on a Latin American Journey",
+        price: 11.99,
+        ISBN: "9781876175702",
+        year: 1995,
+        author: "Ernesto 'Che' Guevara",
+        image:
+          "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1354902593i/172732.jpg",
+        description:
+          "A memoir of Che Guevara's motorcycle journey across South America, providing insights into his transformation.",
+      },
+      {
+        id: 18,
+        name: "Seven Years in Tibet",
+        price: 12.95,
+        ISBN: "9780140186152",
+        year: 1952,
+        author: "Heinrich Harrer",
+        image:
+          "https://literarychronicles.files.wordpress.com/2012/04/seven_years_in_tibet_ver1.jpg",
+        description:
+          "An account of the author's experiences and friendship with the Dalai Lama during his seven-year stay in Tibet.",
+      },
+      {
+        id: 19,
+        name: "Underground: A Human History of the Worlds Beneath Our Feet",
+        price: 16.95,
+        ISBN: "9780812974792",
+        year: 2004,
+        author: "Will Hunt",
+        image:
+          "https://static01.nyt.com/images/2019/06/16/books/review/16Williams-COVER/16Williams-COVER-superJumbo.jpg",
+        description:
+          "A fascinating exploration of the hidden worlds beneath our cities and landscapes, from subways to catacombs.",
+      },
+      {
+        id: 20,
+        name: "The Geography of Bliss: One Grump's Search for the Happiest Places in the World",
+        price: 13.99,
+        ISBN: "9780446698894",
+        year: 2008,
+        author: "Eric Weiner",
+        image: "https://m.media-amazon.com/images/I/5197ChRvpJL.jpg",
+        description:
+          "An exploration of happiness and cultural differences as the author travels to various countries in search of bliss.",
+      },
+    ],
   },
   // { id: 13, category: "Poetry", books: [] },
   // { id: 14, category: "Young Adult", books: [] },
