@@ -64,7 +64,7 @@ const BookList = ({ books, handleAddToBasket, addBooksToWhishlistHandler }) => {
         <div className="w-full flex justify-center items-center space-x-8 mt-8">
           <img
             onClick={() => infoBtnHandler(el.id)}
-            src="../src/assets/InformationBTN.png"
+            src="src/assets/InformationBTN.png"
             alt="information"
           />
           <button
