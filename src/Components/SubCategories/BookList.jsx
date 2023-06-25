@@ -5,6 +5,7 @@ import { CartContext } from "../../App";
 
 import HeartButton from "../SmalComponents/HeartButton";
 import BookInformation from "./BookInformation";
+import InfoButton from "./InfoButton";
 
 const BookList = ({ books, handleAddToBasket, addBooksToWhishlistHandler }) => {
   let { language } = useContext(CartContext);
@@ -42,9 +43,9 @@ const BookList = ({ books, handleAddToBasket, addBooksToWhishlistHandler }) => {
             </span>
           </div> */}
         </div>
-        <div className="flex flex-col justify-center items-start pl-14 w-full text-sm font-serif ">
+        <div className="flex flex-col justify-center items-start w-full text-sm font-serif pl-24">
           <div className="mt-3 flex justify-start items-center font-serif whitespace-nowrap overflow-hidden text-ellipsis w-1/2">
-            <span className="text-lg font-bold  pt-1 w-72 truncate">
+            <span className="text-lg font-bold  pt-1 w-72 truncate ">
               {el.name}
             </span>
           </div>
@@ -62,11 +63,9 @@ const BookList = ({ books, handleAddToBasket, addBooksToWhishlistHandler }) => {
           </span>
         </div>
         <div className="w-full flex justify-center items-center space-x-8 mt-8">
-          <img
-            onClick={() => infoBtnHandler(el.id)}
-            src="src/assets/InformationBTN.png"
-            alt="information"
-          />
+          <div onClick={() => infoBtnHandler(el.id)}>
+            <InfoButton />
+          </div>
           <button
             onClick={() => AddBooksToBasketHandler(el)}
             className="text-yellow-50 py-2 px-4 sm:h-12 sm:w-52 rounded hover:bg-cyan-700 bg-cyan-900 flex justify-center items-center mb-5"
