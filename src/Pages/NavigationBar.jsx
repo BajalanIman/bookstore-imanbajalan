@@ -83,7 +83,6 @@ const NavigationBar = ({ darkModeHandler }) => {
           <div className="w-1/5 mr-12">
             <ChangeLanguage />
           </div>
-
           <div className="flex justify-center items-center ml-2  sm:hover:border sm:hover:rounded w-24 h-16 ">
             <DarkModeSwitch
               checked={darkSide}
