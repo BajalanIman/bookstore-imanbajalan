@@ -11,6 +11,7 @@ import ChangeLanguage from "./ChangeLanguage";
 import SearchButton from "../Components/SmalComponents/SearchButton";
 import BasketButton from "../Components/SmalComponents/BasketButton";
 import WishLListIcon from "../Components/SmalComponents/WishLListIcon";
+import NavigationBarLogo from "../assets/NavigationBarLogo.png";
 
 const NavigationBar = ({ darkModeHandler }) => {
   const nameInLocaleStorage = localStorage.getItem("name");
@@ -68,7 +69,7 @@ const NavigationBar = ({ darkModeHandler }) => {
             >
               <img
                 className=" h-8 w-8 rounded-full"
-                src="src/assets/Iman-NavigationBar-Logo.png"
+                src={NavigationBarLogo}
                 alt="Logo"
               />
             </a>
