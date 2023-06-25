@@ -62,7 +62,7 @@ const Login = () => {
           <div className="w-44 h-44 rounded-full mt-6 flex justify-center items-center border shadow-lg text-gray-400 shadow-gray-400 dark:bg-white">
             <img
               className="w-38 rounded-full m-0 p-0"
-              src="/Iman-Book-Logo.png"
+              src="../src/assets/Iman-Book-Logo.png"
               alt="logo"
             />
           </div>
