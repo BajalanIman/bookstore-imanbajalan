@@ -68,7 +68,7 @@ const NavigationBar = ({ darkModeHandler }) => {
             >
               <img
                 className=" h-8 w-8 rounded-full"
-                src="../public/Iman-NavigationBar-Logo.png"
+                src="../src/assets/Iman-NavigationBar-Logo.png"
                 alt="Logo"
               />
             </a>
