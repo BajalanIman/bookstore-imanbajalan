@@ -18,8 +18,8 @@ const NavigationBar = ({ darkModeHandler }) => {
   useEffect(() => {
     if (nameInLocaleStorage) {
       const name = nameInLocaleStorage;
-      console.log(name);
-      console.log(nameInLocaleStorage);
+      // console.log(name);
+      // console.log(nameInLocaleStorage);
     }
   }, [nameInLocaleStorage]);
 
@@ -43,7 +43,7 @@ const NavigationBar = ({ darkModeHandler }) => {
   useEffect(() => {
     setLoginLogout(checkNameFromLocal);
   }, [loginLogout]);
-  console.log(loginLogout);
+  // console.log(loginLogout);
 
   const [changeLogoutPage, setChangeLogoutPage] = useState(false);
 
@@ -82,9 +82,7 @@ const NavigationBar = ({ darkModeHandler }) => {
           <div className="w-1/5 mr-12">
             <ChangeLanguage />
           </div>
-          <Link to="/wishLListBooks">
-            <WishLListIcon></WishLListIcon>
-          </Link>
+
           <div className="flex justify-center items-center ml-2  sm:hover:border sm:hover:rounded w-24 h-16 ">
             <DarkModeSwitch
               checked={darkSide}
@@ -95,7 +93,7 @@ const NavigationBar = ({ darkModeHandler }) => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center sm:gap-8 ml-[-12px]">
+      <div className="flex sm:justify-center items-center sm:gap-8 ml-[-12px] sm:w-24 w-64 h-12 justify-between">
         {!loginLogout && (
           <Link to="/login">
             <LoginButton></LoginButton>
@@ -106,12 +104,15 @@ const NavigationBar = ({ darkModeHandler }) => {
             <LogoutButton />
           </div>
         )}
+        <Link to="/wishLListBooks">
+          <WishLListIcon></WishLListIcon>
+        </Link>
 
-        <input
+        {/* <input
           type="text"
           placeholder="Search..."
           className=" w-72 sm:w-96 h-11 mb-5 mt-4 rounded pl-4 hover:bg-yellow-50 bg-red-50 ml-2 text-sm"
-        />
+        /> */}
 
         <div className="ml-2 flex flex-col items-center">
           <div className="relative">

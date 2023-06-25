@@ -16,6 +16,7 @@ const SubCategories = () => {
   const SORT_NEW = `${localize(language, "New")}`;
 
   const { cartItems, setCartItems } = useContext(CartContext);
+  const { wishItem, setWishItem } = useContext(CartContext);
   const [sortType, setSortType] = useState("");
 
   // const [cheapSort, setCheapSort] = useState(true);
@@ -64,6 +65,15 @@ const SubCategories = () => {
     }, 3000);
   };
 
+  const addBooksToWhishlistHandler = (mainWishlist) => {
+    setWishItem([...wishItem, mainWishlist]);
+    // setItemAddInfo(true);
+    // setTimeout(() => {
+    //   setItemAddInfo(false);
+    // }, 3000);
+    // console.log(mainWishlist);
+  };
+
   const location = useLocation();
   const books = location.state.booklists || [];
   // let basket = { id: "", name: "", price: null };
@@ -79,7 +89,7 @@ const SubCategories = () => {
   return (
     <div className="mb-1 text-sm font-light text-gray-500 dark:text-gray-400">
       {itemAddInfo && (
-        <div className="absolute top-36 sm:top-24 w-full">
+        <div className="absolute top-28 sm:top-24 w-full">
           <InfoButton message={localize(language, "BookAddToBasket")} />
         </div>
       )}
@@ -122,7 +132,11 @@ const SubCategories = () => {
       </div>
       <div>
         <div className="m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8 dark:bg-gray-800">
-          <BookList books={sortedBooks} handleAddToBasket={handleAddToBasket} />
+          <BookList
+            books={sortedBooks}
+            handleAddToBasket={handleAddToBasket}
+            addBooksToWhishlistHandler={addBooksToWhishlistHandler}
+          />
         </div>
       </div>
     </div>

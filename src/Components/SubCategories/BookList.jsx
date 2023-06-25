@@ -6,11 +6,12 @@ import { CartContext } from "../../App";
 import HeartButton from "../SmalComponents/HeartButton";
 import BookInformation from "./BookInformation";
 
-const BookList = ({ books, handleAddToBasket }) => {
+const BookList = ({ books, handleAddToBasket, addBooksToWhishlistHandler }) => {
   let { language } = useContext(CartContext);
   const [showInfoId, setShowInfoId] = useState(null);
   const [shoeInformationModal, setShoeInformationModal] = useState(false);
   let initialBasket = [];
+  let initialWishlist = [];
 
   const infoBtnHandler = (id) => {
     setShowInfoId(id === showInfoId ? null : id);
@@ -20,6 +21,11 @@ const BookList = ({ books, handleAddToBasket }) => {
   const AddBooksToBasketHandler = (el) => {
     initialBasket.push(el);
     handleAddToBasket(initialBasket);
+  };
+
+  const addToWhishlistHandler = (el) => {
+    initialWishlist.push(el);
+    addBooksToWhishlistHandler(initialWishlist);
   };
 
   return books.map((el) => (
@@ -67,7 +73,9 @@ const BookList = ({ books, handleAddToBasket }) => {
           >
             {localize(language, "AddToBasket")}
           </button>
-          <HeartButton></HeartButton>
+          <button onClick={() => addToWhishlistHandler(el)}>
+            <HeartButton></HeartButton>
+          </button>
         </div>
         {showInfoId === el.id && shoeInformationModal && (
           <div className="absolute">

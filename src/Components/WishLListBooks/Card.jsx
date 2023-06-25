@@ -6,7 +6,7 @@ import MinusButton from "../Basket/MinusButton";
 import TrashButton from "../Basket/TrashButton";
 
 const Card = ({ bookData, setErrorMassage }) => {
-  const { cartItems, setCartItems } = useContext(CartContext);
+  const { wishItem, setWishItem } = useContext(CartContext);
   const [increasePrice, setIncreasePrice] = useState(1);
 
   // const AddBookNumberHandler = () => {
@@ -19,8 +19,8 @@ const Card = ({ bookData, setErrorMassage }) => {
   //   };
 
   const removeBookHandler = () => {
-    setCartItems(
-      cartItems.map((items) => items.filter((item) => item.id !== bookData.id))
+    setWishItem(
+      wishItem.map((items) => items.filter((item) => item.id !== bookData.id))
     );
   };
 

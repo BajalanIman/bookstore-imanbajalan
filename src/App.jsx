@@ -40,6 +40,8 @@ const router = createBrowserRouter([
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
+  const [wishItem, setWishItem] = useState([]);
+
   const [totalPrice, setTotalPrice] = useState();
   const [language, setLanguage] = useState("");
 
@@ -61,6 +63,8 @@ function App() {
         value={{
           cartItems,
           setCartItems,
+          wishItem,
+          setWishItem,
           totalPrice,
           language,
           setLanguage,
