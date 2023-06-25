@@ -8,6 +8,7 @@ import Basket from "./Pages/Basket";
 import RootLayout from "./Pages/RootLayout";
 import Login from "./Pages/Login";
 import Purchase from "./Pages/Purchase";
+import WishLListBooks from "./Pages/WishLListBooks";
 
 export const CartContext = createContext({ 123: 1 });
 // export const LanguageContext = createContext("");
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
       { path: "", element: <Body /> },
       { path: "/products", element: <SubCategories /> },
       { path: "/createaccount", element: <CreateAccount /> },
+      { path: "/wishLListBooks", element: <WishLListBooks /> },
       { path: "purchase", element: <Purchase /> },
       {
         path: "basket",

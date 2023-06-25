@@ -5,6 +5,7 @@ import { CartContext } from "../App";
 
 import BookList from "../Components/SubCategories/BookList";
 import FilterBooksBTN from "../Components/SubCategories/FilterBooksBTN";
+import InfoButton from "../Components/WishLListBooks/InfoButton";
 
 const SubCategories = () => {
   let { language } = useContext(CartContext);
@@ -78,11 +79,11 @@ const SubCategories = () => {
   return (
     <div className="mb-1 text-sm font-light text-gray-500 dark:text-gray-400">
       {itemAddInfo && (
-        <p className="absolute sm:ml-6 bg-green-600 text-white font-bold p-4 top-36 sm:top-24 border border-green-900 rounded-tr-lg rounded-br-xl">
-          {localize(language, "BookAddToBasket")}
-        </p>
+        <div className="absolute top-36 sm:top-24 w-full">
+          <InfoButton message={localize(language, "BookAddToBasket")} />
+        </div>
       )}
-      <div className=" ml-6 w-full flex justify-center mt-14"></div>
+      <div className=" w-full flex justify-center mt-14"></div>
       <div className="flex justify-center items-center w-full absolute gap-8 mt-0">
         <FilterBooksBTN name={SORT_NEW} sortHandler={newSortHandler} />
         <FilterBooksBTN name={SORT_OLD} sortHandler={oldSortHandler} />
@@ -92,8 +93,8 @@ const SubCategories = () => {
           name={SORT_EXPENSIVE}
           sortHandler={expensiveSortHandler}
         />
-
-        {/* <button
+        <div>
+          {/* <button
           className="font-serif text-slate-700 border border-white hover-text-black hover:border-1 hover:border-b-orange-500"
           onClick={chepSortHandler}
         >
@@ -117,6 +118,7 @@ const SubCategories = () => {
         >
           New
         </button> */}
+        </div>
       </div>
       <div>
         <div className="m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8 dark:bg-gray-800">

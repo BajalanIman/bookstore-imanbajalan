@@ -10,7 +10,7 @@ import HomeButton from "../Components/SmalComponents/HomeButton";
 import ChangeLanguage from "./ChangeLanguage";
 import SearchButton from "../Components/SmalComponents/SearchButton";
 import BasketButton from "../Components/SmalComponents/BasketButton";
-// import WishLListIcon from "../Components/SmalComponents/WishLListIcon";
+import WishLListIcon from "../Components/SmalComponents/WishLListIcon";
 
 const NavigationBar = ({ darkModeHandler }) => {
   const nameInLocaleStorage = localStorage.getItem("name");
@@ -67,7 +67,7 @@ const NavigationBar = ({ darkModeHandler }) => {
               target="_blank"
             >
               <img
-                className="sm:h-16 sm:w-16 h-8 w-8 rounded-full"
+                className=" h-8 w-8 rounded-full"
                 src="../public/Iman-NavigationBar-Logo.png"
                 alt="Logo"
               />
@@ -82,7 +82,10 @@ const NavigationBar = ({ darkModeHandler }) => {
           <div className="w-1/5 mr-12">
             <ChangeLanguage />
           </div>
-          <div className="flex justify-center items-center ml-2  hover:border hover:rounded w-24 h-16 ">
+          <Link to="/wishLListBooks">
+            <WishLListIcon></WishLListIcon>
+          </Link>
+          <div className="flex justify-center items-center ml-2  sm:hover:border sm:hover:rounded w-24 h-16 ">
             <DarkModeSwitch
               checked={darkSide}
               onChange={darkModeHandlers}
@@ -92,9 +95,7 @@ const NavigationBar = ({ darkModeHandler }) => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center sm:gap-8 ">
-        {/* <WishLListIcon /> */}
-
+      <div className="flex justify-center items-center sm:gap-8 ml-[-12px]">
         {!loginLogout && (
           <Link to="/login">
             <LoginButton></LoginButton>
